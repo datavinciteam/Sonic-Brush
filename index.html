@@ -494,7 +494,8 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .car-arrow{width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(0,0,0,0.15);background:#fff;cursor:pointer;font-size:15px;color:#1d1d1f;line-height:1;transition:background .15s,border-color .15s;font-family:var(--font)}
 .car-arrow:hover{background:#f5f5f7;border-color:rgba(0,0,0,0.3)}
 /* Controls */
-.car-controls{display:flex;justify-content:center;margin-top:18px}
+.car-img-wrap{position:relative}
+.car-controls{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;margin-top:0;z-index:2}
 .car-dots-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(0,0,0,0.06);border-radius:980px;padding:8px 12px}
 .car-dot{width:7px;height:7px;border-radius:4px;background:rgba(0,0,0,0.2);cursor:pointer;transition:width .3s ease,background .2s ease;flex-shrink:0}
 .car-dot.on{width:22px;background:#1d1d1f}
@@ -1029,7 +1030,6 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 /* ── Carousel: full-width single-slide on phones ──────── */
 @media(max-width:480px){
   .tf-carousel{width:100%;padding:0}
-  .car-arrows{display:none}
 }
 @media(max-width:768px){
   #topfold{padding:32px 20px 52px}
@@ -1153,7 +1153,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .fs-section{position:relative;height:500vh;background:#fff;padding-bottom:120px}
 
 /* ── Top fold responsive fixes ───────────────────────────── */
-@media(max-width:900px){.tf-inner{display:flex;flex-direction:column;gap:16px;width:100%}.tf-carousel{position:relative;margin-left:0;width:100%;flex:none;margin-bottom:24px}.tf-buy{min-width:0;max-width:100%;width:100%;flex:none}.car-controls{position:absolute;bottom:14px;left:0;right:0;margin-top:0;z-index:2}.car-dots-pill{background:rgba(0,0,0,0.32);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}.car-dot{background:rgba(255,255,255,0.45)}.car-dot.on{background:#fff}}
+@media(max-width:900px){.tf-inner{display:flex;flex-direction:column;gap:16px;width:100%}.tf-carousel{margin-left:0;width:100%;flex:none;margin-bottom:24px}.tf-buy{min-width:0;max-width:100%;width:100%;flex:none}.car-dots-pill{background:rgba(0,0,0,0.32);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}.car-dot{background:rgba(255,255,255,0.45)}.car-dot.on{background:#fff}.car-arrows{display:flex;gap:6px;margin-bottom:12px}.car-arrow{width:38px;height:38px;background:#fff;border:1.5px solid rgba(0,0,0,0.15);color:#1d1d1f;font-size:16px}}
 @media(max-width:540px){.tf-segs .tf-seg{padding:9px 8px;font-size:13px}}
 
 /* ── Background childhood SVG decorations ─────────────── */
@@ -1251,63 +1251,65 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
         <button class="car-arrow" onclick="carGo(carCur-1)" aria-label="Previous">&lt;</button>
         <button class="car-arrow" onclick="carGo(carCur+1)" aria-label="Next">&gt;</button>
       </div>
-      <div class="car-outer" id="carOuter">
-        <div class="car-track" id="carTrack" style="gap: 12px; transform: translateX(-2678px);">
+      <div class="car-img-wrap">
+        <div class="car-outer" id="carOuter">
+          <div class="car-track" id="carTrack" style="gap: 12px; transform: translateX(-2678px);">
 
-          <!-- Slide 6 (leftmost in DOM — last content) -->
-          <div class="car-slide" style="width: 374px;">
-            <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/Family_Pack_3587865f-e18c-43f4-ba82-dd6eab68e784.png?v=1762282356&amp;width=940&#39;) center/cover no-repeat"></div>
+            <!-- Slide 6 (leftmost in DOM — last content) -->
+            <div class="car-slide" style="width: 374px;">
+              <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/Family_Pack_3587865f-e18c-43f4-ba82-dd6eab68e784.png?v=1762282356&amp;width=940&#39;) center/cover no-repeat"></div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="car-slide" style="width: 374px;">
+              <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/sonic-pro-kids-brush_dentist.png?v=1761849185&amp;width=940&#39;) center/cover no-repeat"></div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="car-slide" style="width: 374px;">
+              <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/sonic-pro-kids-brush_clinical_38d4f690-790b-42df-ada2-d4551a909ac4.png?v=1771964200&amp;width=940&#39;) center/cover no-repeat"></div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="car-slide" style="width: 374px;">
+              <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/sonic-pro-brush-howto3.gif?v=1771964200&amp;width=940&#39;) center/cover no-repeat"></div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="car-slide" style="width: 374px;">
+              <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/sonic-pro-brush_howto2.png?v=1771964200&amp;width=940&#39;) center/cover no-repeat"></div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="car-slide" style="width: 374px;">
+              <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/sonic-pro-brush_howto1.png?v=1771964200&amp;width=940&#39;) center/cover no-repeat"></div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="car-slide" style="width: 374px;">
+              <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/Kids_Sonic_Pro_Step_3.gif?v=1692111881&amp;width=500&#39;) center/cover no-repeat"></div>
+            </div>
+
+            <!-- Slide 0 (rightmost in DOM — first content, shown on load) -->
+            <div class="car-slide" style="width: 374px;">
+              <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/Sibling_Pack-2-1_892503ba-8e57-404e-a5e6-96edb9908c35.png?v=1761845215&amp;width=940&#39;) center/cover no-repeat"></div>
+            </div>
+
           </div>
-
-          <!-- Slide 5 -->
-          <div class="car-slide" style="width: 374px;">
-            <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/sonic-pro-kids-brush_dentist.png?v=1761849185&amp;width=940&#39;) center/cover no-repeat"></div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="car-slide" style="width: 374px;">
-            <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/sonic-pro-kids-brush_clinical_38d4f690-790b-42df-ada2-d4551a909ac4.png?v=1771964200&amp;width=940&#39;) center/cover no-repeat"></div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="car-slide" style="width: 374px;">
-            <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/sonic-pro-brush-howto3.gif?v=1771964200&amp;width=940&#39;) center/cover no-repeat"></div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="car-slide" style="width: 374px;">
-            <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/sonic-pro-brush_howto2.png?v=1771964200&amp;width=940&#39;) center/cover no-repeat"></div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="car-slide" style="width: 374px;">
-            <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/sonic-pro-brush_howto1.png?v=1771964200&amp;width=940&#39;) center/cover no-repeat"></div>
-          </div>
-
-          <!-- Slide 1 -->
-          <div class="car-slide" style="width: 374px;">
-            <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/Kids_Sonic_Pro_Step_3.gif?v=1692111881&amp;width=500&#39;) center/cover no-repeat"></div>
-          </div>
-
-          <!-- Slide 0 (rightmost in DOM — first content, shown on load) -->
-          <div class="car-slide" style="width: 374px;">
-            <div class="car-img" style="background:url(&#39;https://tryautobrush.com/cdn/shop/files/Sibling_Pack-2-1_892503ba-8e57-404e-a5e6-96edb9908c35.png?v=1761845215&amp;width=940&#39;) center/cover no-repeat"></div>
-          </div>
-
         </div>
-      </div>
 
-      <!-- Controls: dots + play/pause in one pill -->
-      <div class="car-controls">
-        <div class="car-dots-pill">
-          <div class="car-dot on" onclick="carGo(0)"></div>
-          <div class="car-dot" onclick="carGo(1)"></div>
-          <div class="car-dot" onclick="carGo(2)"></div>
-          <div class="car-dot" onclick="carGo(3)"></div>
-          <div class="car-dot" onclick="carGo(4)"></div>
-          <div class="car-dot" onclick="carGo(5)"></div>
-          <div class="car-dot" onclick="carGo(6)"></div>
-          <div class="car-dot" onclick="carGo(7)"></div>
+        <!-- Controls: dots overlaid on image -->
+        <div class="car-controls">
+          <div class="car-dots-pill">
+            <div class="car-dot on" onclick="carGo(0)"></div>
+            <div class="car-dot" onclick="carGo(1)"></div>
+            <div class="car-dot" onclick="carGo(2)"></div>
+            <div class="car-dot" onclick="carGo(3)"></div>
+            <div class="car-dot" onclick="carGo(4)"></div>
+            <div class="car-dot" onclick="carGo(5)"></div>
+            <div class="car-dot" onclick="carGo(6)"></div>
+            <div class="car-dot" onclick="carGo(7)"></div>
+          </div>
         </div>
       </div>
     </div><!-- /carousel -->
@@ -1592,11 +1594,11 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 <!-- ═══ SALES SPIEL ════════════════════════════════════════ -->
 <section class="spiel-section">
   <div class="spiel-inner">
-    <p class="spiel-text"><span class="spiel-word on"><span class="spiel-word on">You</span></span> <span class="spiel-word on"><span class="spiel-word on">know</span></span> <span class="spiel-word on"><span class="spiel-word on">the</span></span> <span class="spiel-word on"><span class="spiel-word on">routine.</span></span> <span class="spiel-hl"><span class="spiel-word on"><span class="spiel-word on">"Did</span></span> <span class="spiel-word on"><span class="spiel-word on">you</span></span> <span class="spiel-word on"><span class="spiel-word on">brush?"</span></span> <span class="spiel-word on"><span class="spiel-word on">"Yes."</span></span> <span class="spiel-word on"><span class="spiel-word on">"The</span></span> <span class="spiel-word on"><span class="spiel-word on">toothbrush</span></span> <span class="spiel-word on"><span class="spiel-word on">is</span></span> <span class="spiel-word on"><span class="spiel-word on">dry."</span></span></span> <span class="spiel-word on"><span class="spiel-word on">Every</span></span> <span class="spiel-word on"><span class="spiel-word on">night,</span></span> <span class="spiel-word on"><span class="spiel-word on">the</span></span> <span class="spiel-word on"><span class="spiel-word on">same</span></span> <span class="spiel-word on"><span class="spiel-word on">negotiation.</span></span> <span class="spiel-hl"><span class="spiel-word on"><span class="spiel-word on">Sonic</span></span> <span class="spiel-word on"><span class="spiel-word on">Brush</span></span> <span class="spiel-word on"><span class="spiel-word on">Kids</span></span> <span class="spiel-word on"><span class="spiel-word on">was</span></span> <span class="spiel-word on"><span class="spiel-word on">designed</span></span> <span class="spiel-word on"><span class="spiel-word on">by</span></span> <span class="spiel-word on"><span class="spiel-word on">parents</span></span> <span class="spiel-word on"><span class="spiel-word on">who</span></span> <span class="spiel-word on"><span class="spiel-word on">were</span></span> <span class="spiel-word on"><span class="spiel-word on">tired</span></span> <span class="spiel-word on"><span class="spiel-word on">of</span></span> <span class="spiel-word on"><span class="spiel-word on">it.</span></span></span> <span class="spiel-word on"><span class="spiel-word on">Your</span></span> <span class="spiel-word on"><span class="spiel-word on">child</span></span> <span class="spiel-word on"><span class="spiel-word on">bites</span></span> <span class="spiel-word on"><span class="spiel-word on">down</span></span> <span class="spiel-word on"><span class="spiel-word on">on</span></span> <span class="spiel-word on"><span class="spiel-word on">a</span></span> <span class="spiel-hl"><span class="spiel-word on"><span class="spiel-word on">soft</span></span> <span class="spiel-word on"><span class="spiel-word on">silicone</span></span> <span class="spiel-word on"><span class="spiel-word on">mouthpiece,</span></span></span> <span class="spiel-word on"><span class="spiel-word on">presses</span></span> <span class="spiel-word on"><span class="spiel-word on">one</span></span> <span class="spiel-word on"><span class="spiel-word on">button,</span></span> <span class="spiel-word"><span class="spiel-word">and</span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word">30</span></span> <span class="spiel-word"><span class="spiel-word">seconds</span></span> <span class="spiel-word"><span class="spiel-word">later</span></span> <span class="spiel-word"><span class="spiel-word">every</span></span> <span class="spiel-word"><span class="spiel-word">tooth</span></span> <span class="spiel-word"><span class="spiel-word">is</span></span> <span class="spiel-word"><span class="spiel-word">gently</span></span> <span class="spiel-word"><span class="spiel-word">cleaned</span></span> <span class="spiel-word"><span class="spiel-word">at</span></span> <span class="spiel-word"><span class="spiel-word">once.</span></span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word">No</span></span> <span class="spiel-word"><span class="spiel-word">brushing</span></span> <span class="spiel-word"><span class="spiel-word">skill</span></span> <span class="spiel-word"><span class="spiel-word">needed.</span></span> <span class="spiel-word"><span class="spiel-word">No</span></span> <span class="spiel-word"><span class="spiel-word">nightly</span></span> <span class="spiel-word"><span class="spiel-word">argument.</span></span></span> <span class="spiel-word"><span class="spiel-word">Just</span></span> <span class="spiel-word"><span class="spiel-word">a</span></span> <span class="spiel-word"><span class="spiel-word">calmer</span></span> <span class="spiel-word"><span class="spiel-word">bedtime</span></span> <span class="spiel-word"><span class="spiel-word">and</span></span> <span class="spiel-word"><span class="spiel-word">a</span></span> <span class="spiel-word"><span class="spiel-word">cleaner</span></span> <span class="spiel-word"><span class="spiel-word">mouth.</span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word">That's</span></span> <span class="spiel-word"><span class="spiel-word">it.</span></span></span></p>
+    <p class="spiel-text"><span class="spiel-word"><span class="spiel-word">You</span></span> <span class="spiel-word"><span class="spiel-word">know</span></span> <span class="spiel-word"><span class="spiel-word">the</span></span> <span class="spiel-word"><span class="spiel-word">routine.</span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word">"Did</span></span> <span class="spiel-word"><span class="spiel-word">you</span></span> <span class="spiel-word"><span class="spiel-word">brush?"</span></span> <span class="spiel-word"><span class="spiel-word">"Yes."</span></span> <span class="spiel-word"><span class="spiel-word">"The</span></span> <span class="spiel-word"><span class="spiel-word">toothbrush</span></span> <span class="spiel-word"><span class="spiel-word">is</span></span> <span class="spiel-word"><span class="spiel-word">dry."</span></span></span> <span class="spiel-word"><span class="spiel-word">Every</span></span> <span class="spiel-word"><span class="spiel-word">night,</span></span> <span class="spiel-word"><span class="spiel-word">the</span></span> <span class="spiel-word"><span class="spiel-word">same</span></span> <span class="spiel-word"><span class="spiel-word">negotiation.</span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word">Sonic</span></span> <span class="spiel-word"><span class="spiel-word">Brush</span></span> <span class="spiel-word"><span class="spiel-word">Kids</span></span> <span class="spiel-word"><span class="spiel-word">was</span></span> <span class="spiel-word"><span class="spiel-word">designed</span></span> <span class="spiel-word"><span class="spiel-word">by</span></span> <span class="spiel-word"><span class="spiel-word">parents</span></span> <span class="spiel-word"><span class="spiel-word">who</span></span> <span class="spiel-word"><span class="spiel-word">were</span></span> <span class="spiel-word"><span class="spiel-word">tired</span></span> <span class="spiel-word"><span class="spiel-word">of</span></span> <span class="spiel-word"><span class="spiel-word">it.</span></span></span> <span class="spiel-word"><span class="spiel-word">Your</span></span> <span class="spiel-word"><span class="spiel-word">child</span></span> <span class="spiel-word"><span class="spiel-word">bites</span></span> <span class="spiel-word"><span class="spiel-word">down</span></span> <span class="spiel-word"><span class="spiel-word">on</span></span> <span class="spiel-word"><span class="spiel-word">a</span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word">soft</span></span> <span class="spiel-word"><span class="spiel-word">silicone</span></span> <span class="spiel-word"><span class="spiel-word">mouthpiece,</span></span></span> <span class="spiel-word"><span class="spiel-word">presses</span></span> <span class="spiel-word"><span class="spiel-word">one</span></span> <span class="spiel-word"><span class="spiel-word">button,</span></span> <span class="spiel-word"><span class="spiel-word">and</span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word">30</span></span> <span class="spiel-word"><span class="spiel-word">seconds</span></span> <span class="spiel-word"><span class="spiel-word">later</span></span> <span class="spiel-word"><span class="spiel-word">every</span></span> <span class="spiel-word"><span class="spiel-word">tooth</span></span> <span class="spiel-word"><span class="spiel-word">is</span></span> <span class="spiel-word"><span class="spiel-word">gently</span></span> <span class="spiel-word"><span class="spiel-word">cleaned</span></span> <span class="spiel-word"><span class="spiel-word">at</span></span> <span class="spiel-word"><span class="spiel-word">once.</span></span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word">No</span></span> <span class="spiel-word"><span class="spiel-word">brushing</span></span> <span class="spiel-word"><span class="spiel-word">skill</span></span> <span class="spiel-word"><span class="spiel-word">needed.</span></span> <span class="spiel-word"><span class="spiel-word">No</span></span> <span class="spiel-word"><span class="spiel-word">nightly</span></span> <span class="spiel-word"><span class="spiel-word">argument.</span></span></span> <span class="spiel-word"><span class="spiel-word">Just</span></span> <span class="spiel-word"><span class="spiel-word">a</span></span> <span class="spiel-word"><span class="spiel-word">calmer</span></span> <span class="spiel-word"><span class="spiel-word">bedtime</span></span> <span class="spiel-word"><span class="spiel-word">and</span></span> <span class="spiel-word"><span class="spiel-word">a</span></span> <span class="spiel-word"><span class="spiel-word">cleaner</span></span> <span class="spiel-word"><span class="spiel-word">mouth.</span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word">That's</span></span> <span class="spiel-word"><span class="spiel-word">it.</span></span></span></p>
   </div>
   <div class="spiel-video-wrap">
     <div class="spiel-video">
-      <iframe width="100%" height="100%" src="./v9_files/xgTYRNEzntQ.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="display:block"></iframe>
+      <iframe width="100%" height="100%" src="./v10_files/xgTYRNEzntQ.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="display:block"></iframe>
     </div>
     <p class="spiel-video-caption"><span class="vcap-q">Tired of the fight?</span><span class="vcap-a"> Watch it disappear.</span></p>
   </div>
@@ -1694,7 +1696,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
     <p class="cmp-sub">You've probably tried two or three approaches to get your child brushing properly. Here's how Sonic Brush Kids is structurally different from each.</p>
 
     <div id="cmpCarOuter" class="cc-outer">
-      <div id="cmpCarTrack" class="cc-track" style="gap: 8px; transform: translateX(-1071px);">
+      <div id="cmpCarTrack" class="cc-track" style="gap: 8px; transform: translateX(-714px);">
 
         <!-- Card 1: Manual Toothbrush -->
         <div class="cc-slide" style="width: 349px;">
@@ -1819,7 +1821,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
       </div>
     </div>
     <div class="cc-nav">
-      <div class="cc-dots" id="cmpDots"><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot on" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button></div>
+      <div class="cc-dots" id="cmpDots"><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot on" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button></div>
       <div class="cc-arrows">
         <button id="cmpPrev" class="cc-arrow" aria-label="Previous">&lt;</button>
         <button id="cmpNext" class="cc-arrow" aria-label="Next">&gt;</button>
@@ -1953,7 +1955,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
   </div>
 
   <div id="rbCarOuter" class="rb-car-outer">
-    <div id="rbCarTrack" class="rb-car-track" style="gap: 8px; transform: translateX(-1125px);">
+    <div id="rbCarTrack" class="rb-car-track" style="gap: 8px; transform: translateX(-747px);">
 
       <div class="rb-slide" style="width: 370px;"><div class="rb-card">
         <p class="rb-label">The concern</p>
@@ -2029,7 +2031,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
   </div>
 
   <div class="rb-nav" style="margin-bottom:0">
-    <div class="rb-dots" id="rbDots"><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot on" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button></div>
+    <div class="rb-dots" id="rbDots"><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot on" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button></div>
     <div class="rb-arrows">
       <button id="rbPrev" class="rb-arrow" aria-label="Previous">&lt;</button>
       <button id="rbNext" class="rb-arrow" aria-label="Next">&gt;</button>
