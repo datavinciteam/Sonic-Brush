@@ -16,8 +16,8 @@
   --text-dark:#1d1d1f;
   --text-light:#f5f5f7;
   --text-muted:#86868b;
-  --blue:#2250CE;
-  --blue-hover:#1a40b0;
+  --blue:#0344A4;
+  --blue-hover:#023a8f;
   --green:#30d158;
   --red:#ff3b30;
   --font:-apple-system,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;
@@ -49,7 +49,7 @@ body{font-family:var(--font);background:var(--bg-white);color:var(--text-dark);-
 /* ── PROMO BAR ───────────────────────────────────────── */
 .promo-bar{
   position:relative;
-  background:#2250CE;
+  background:#0344A4;
   height:40px;
   display:flex;align-items:center;justify-content:center;
   overflow:hidden;
@@ -69,7 +69,7 @@ body{font-family:var(--font);background:var(--bg-white);color:var(--text-dark);-
 }
 .hero-glow{
   position:absolute;width:800px;height:800px;
-  background:radial-gradient(ellipse,rgba(255,64,129,0.07) 0%,rgba(124,77,255,0.05) 45%,transparent 70%);
+  background:radial-gradient(ellipse,rgba(3,68,164,0.07) 0%,rgba(3,68,164,0.05) 45%,transparent 70%);
   top:50%;left:50%;transform:translate(-50%,-55%);
   pointer-events:none;
 }
@@ -113,7 +113,7 @@ body{font-family:var(--font);background:var(--bg-white);color:var(--text-dark);-
 }
 .brush{
   width:80px;margin:0 auto;position:relative;
-  filter:drop-shadow(0 36px 72px rgba(255,64,129,0.22)) drop-shadow(0 10px 28px rgba(0,0,0,0.08));
+  filter:drop-shadow(0 36px 72px rgba(3,68,164,0.15)) drop-shadow(0 10px 28px rgba(0,0,0,0.08));
 }
 .b-head{
   width:80px;height:94px;background:#fff;
@@ -125,23 +125,23 @@ body{font-family:var(--font);background:var(--bg-white);color:var(--text-dark);-
 .b-row{display:flex;gap:4px;justify-content:center}
 .b-tuft{width:13px;border-radius:6px}
 .b-row:nth-child(1) .b-tuft{height:22px}
-.b-row:nth-child(1) .b-tuft:nth-child(1){background:linear-gradient(to top,#ff6b9d,#c44cff)}
-.b-row:nth-child(1) .b-tuft:nth-child(2){background:linear-gradient(to top,#4facfe,#00f2fe)}
-.b-row:nth-child(1) .b-tuft:nth-child(3){background:linear-gradient(to top,#43e97b,#38f9d7)}
-.b-row:nth-child(1) .b-tuft:nth-child(4){background:linear-gradient(to top,#f6d365,#fda085)}
+.b-row:nth-child(1) .b-tuft:nth-child(1){background:linear-gradient(to top,#60a5fa,#3b82f6)}
+.b-row:nth-child(1) .b-tuft:nth-child(2){background:linear-gradient(to top,#60a5fa,#93c5fd)}
+.b-row:nth-child(1) .b-tuft:nth-child(3){background:linear-gradient(to top,#3b82f6,#60a5fa)}
+.b-row:nth-child(1) .b-tuft:nth-child(4){background:linear-gradient(to top,#93c5fd,#60a5fa)}
 .b-row:nth-child(2) .b-tuft{height:16px}
-.b-row:nth-child(2) .b-tuft:nth-child(1){background:linear-gradient(to top,#4facfe,#00f2fe)}
-.b-row:nth-child(2) .b-tuft:nth-child(2){background:linear-gradient(to top,#ff6b9d,#c44cff)}
-.b-row:nth-child(2) .b-tuft:nth-child(3){background:linear-gradient(to top,#f6d365,#fda085)}
-.b-row:nth-child(2) .b-tuft:nth-child(4){background:linear-gradient(to top,#43e97b,#38f9d7)}
+.b-row:nth-child(2) .b-tuft:nth-child(1){background:linear-gradient(to top,#60a5fa,#93c5fd)}
+.b-row:nth-child(2) .b-tuft:nth-child(2){background:linear-gradient(to top,#60a5fa,#3b82f6)}
+.b-row:nth-child(2) .b-tuft:nth-child(3){background:linear-gradient(to top,#93c5fd,#60a5fa)}
+.b-row:nth-child(2) .b-tuft:nth-child(4){background:linear-gradient(to top,#3b82f6,#60a5fa)}
 .b-neck{
   width:20px;height:26px;
-  background:linear-gradient(to bottom,#f5f5f7,#ff4081);
+  background:linear-gradient(to bottom,#f5f5f7,#3b82f6);
   margin:0 auto;
 }
 .b-handle{
   width:80px;height:210px;
-  background:linear-gradient(168deg,#ff8a80 0%,#ff4081 32%,#7c4dff 68%,#5200ea 100%);
+  background:linear-gradient(168deg,#93c5fd 0%,#3b82f6 32%,#0344A4 68%,#023a8f 100%);
   border-radius:20px;position:relative;
   display:flex;flex-direction:column;align-items:center;
   padding-top:30px;gap:14px;
@@ -175,7 +175,7 @@ body{font-family:var(--font);background:var(--bg-white);color:var(--text-dark);-
 }
 .b-ring{
   position:absolute;inset:0;border-radius:50%;
-  border:1.5px solid rgba(255,64,129,0.3);
+  border:1.5px solid rgba(3,68,164,0.2);
   animation:bRing 2.4s ease-out infinite;
 }
 .b-ring:nth-child(2){animation-delay:.8s}
@@ -278,7 +278,7 @@ body{font-family:var(--font);background:var(--bg-white);color:var(--text-dark);-
 
 /* Dark section overrides */
 .dark{background:var(--bg-dark);color:var(--text-light)}
-.dark .eyebrow{color:#2997ff}
+.dark .eyebrow{color:#0344A4}
 .dark .body-copy{color:rgba(245,245,247,0.55)}
 
 /* Light gray section */
@@ -293,7 +293,7 @@ body{font-family:var(--font);background:var(--bg-white);color:var(--text-dark);-
 .hcard.wide{grid-column:span 2}
 .hcard-chip{
   display:inline-block;font-size:11px;font-weight:700;
-  color:#2997ff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;
+  color:#0344A4;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;
 }
 .hcard-headline{
   font-size:clamp(22px,2.8vw,30px);font-weight:700;
@@ -398,7 +398,7 @@ body{font-family:var(--font);background:var(--bg-white);color:var(--text-dark);-
   width:22px;background:rgba(255,255,255,0.12);border-radius:4px;
   animation:barGrow .5s ease-out both;
 }
-.sig-bar.lit{background:#2997ff}
+.sig-bar.lit{background:#0344A4}
 .sig-bar:nth-child(1){height:16%;animation-delay:.2s}
 .sig-bar:nth-child(2){height:36%;animation-delay:.32s}
 .sig-bar:nth-child(3){height:58%;animation-delay:.44s}
@@ -407,7 +407,7 @@ body{font-family:var(--font);background:var(--bg-white);color:var(--text-dark);-
 @keyframes barGrow{from{opacity:.2;transform:scaleY(.5)}to{opacity:1;transform:scaleY(1)}}
 .fiveg-badge{
   font-size:14px;font-weight:700;letter-spacing:.05em;
-  color:#2997ff;margin-bottom:48px;
+  color:#0344A4;margin-bottom:48px;
 }
 .conn-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:720px;margin:0 auto}
 .conn-card{
@@ -479,7 +479,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .car-track{display:flex;overflow:visible;will-change:transform;transition:transform .4s cubic-bezier(.25,.1,.25,1)}
 .car-slide{flex-shrink:0;cursor:grab;user-select:none;-webkit-user-select:none}
 .car-slide:active{cursor:grabbing}
-.car-img{border-radius:16px;position:relative;overflow:hidden;aspect-ratio:1/1;background:#f8d5e0}
+.car-img{border-radius:16px;position:relative;overflow:hidden;aspect-ratio:1/1;background:#dbeafe}
 .car-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .car-copy{position:absolute;top:28px;left:28px;font-size:17px;font-weight:600;line-height:1.45;max-width:45%;-webkit-font-smoothing:antialiased;pointer-events:none}
 .car-copy-eyebrow{font-size:11px;letter-spacing:.09em;text-transform:uppercase;opacity:.65;margin-bottom:10px;font-weight:500;display:block}
@@ -495,12 +495,12 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .car-dots-pill{display:none}
 .car-thumbs{display:flex;gap:8px;margin-top:10px;padding:0 2px}
 .car-thumb{flex:1;aspect-ratio:1/1;border-radius:10px;background-size:cover;background-position:center;cursor:pointer;border:2.5px solid transparent;transition:border-color .15s,opacity .15s;opacity:.6}
-.car-thumb.on{border-color:#2250CE;opacity:1}
+.car-thumb.on{border-color:#0344A4;opacity:1}
 .car-dot{width:6px;height:6px;border-radius:4px;background:rgba(255,255,255,0.5);cursor:pointer;transition:width .3s ease,background .2s ease;flex-shrink:0;border:none;padding:0}
 .car-dot.on{width:20px;background:#fff}
 
 /* Sales spiel */
-.spiel-section{padding:40px 0 60px;background:#2250CE;text-align:center}
+.spiel-section{padding:40px 0 60px;background:#0344A4;text-align:center}
 /* Comparison section */
 .cmp-section{padding:200px 0 160px;background:linear-gradient(rgba(0,0,0,0.52),rgba(0,0,0,0.52)),url('https://drive.google.com/thumbnail?id=1vm-VGaY2PmbHSHGMKoWnJm1QN26DNOTN&sz=w1500') center/cover no-repeat;position:relative}
 .cmp-section::before{content:'';position:absolute;top:0;left:0;right:0;height:180px;background:linear-gradient(to bottom,#fff,transparent);pointer-events:none;z-index:1}
@@ -514,12 +514,12 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .doc-quote-text{font-size:16px;line-height:1.65;color:#1d1d1f;font-style:italic;margin-bottom:14px}
 .doc-quote-name{display:block;font-size:14px;font-weight:600;color:#1d1d1f}
 .doc-quote-role{display:block;font-size:13px;color:#86868b;margin-top:3px}
-.faq-eyebrow{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#2250CE;margin-bottom:16px}
+.faq-eyebrow{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#0344A4;margin-bottom:16px}
 .faq-headline{font-size:48px;font-weight:600;letter-spacing:-.03em;color:#1d1d1f;margin-bottom:48px;line-height:1.1}
 .faq-item{border-bottom:1px solid rgba(0,0,0,0.08)}
 .faq-q{width:100%;background:none;border:none;padding:22px 0;display:flex;justify-content:space-between;align-items:center;font-size:20px;font-weight:500;color:#1d1d1f;cursor:pointer;text-align:left;gap:16px;font-family:var(--font)}
-.faq-q:hover{color:#2250CE}
-.faq-icon{font-size:22px;color:#2250CE;flex-shrink:0;transition:transform .25s ease;line-height:1}
+.faq-q:hover{color:#0344A4}
+.faq-icon{font-size:22px;color:#0344A4;flex-shrink:0;transition:transform .25s ease;line-height:1}
 .faq-item.open .faq-icon{transform:rotate(45deg)}
 .faq-a{font-size:18px;line-height:1.65;color:#86868b;padding:0 0 22px;display:none;max-width:520px}
 .faq-item.open .faq-a{display:block}
@@ -527,9 +527,9 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 /* Image collage */
 .collage-section{background:#fff;padding:100px 0 0}
 .collage-header{max-width:1440px;margin:0 auto;padding:0 24px 64px}
-.collage-eyebrow{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#2250CE;margin-bottom:16px}
+.collage-eyebrow{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#0344A4;margin-bottom:16px}
 .collage-headline{font-size:64px;font-weight:600;letter-spacing:-.03em;line-height:1.1;color:#1d1d1f;text-align:left}
-.collage-headline em{font-style:italic;font-weight:400;color:#2250CE}
+.collage-headline em{font-style:italic;font-weight:400;color:#0344A4}
 .collage-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3px}
 .cg-tile{overflow:hidden;position:relative;background:#e8e8e8}
 .cg-tile:not(.cg-large){aspect-ratio:1/1}
@@ -539,7 +539,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .cg-play-icon{position:absolute;top:10px;right:10px;width:28px;height:28px;background:rgba(255,255,255,0.9);border-radius:50%;display:flex;align-items:center;justify-content:center;pointer-events:none}
 .cg-play-icon svg{width:10px;height:10px;fill:#1d1d1f;margin-left:2px}
 /* Sales rebuttals */
-.rb-section{background:#1a52b8;padding:120px 0}
+.rb-section{background:#023a8f;padding:120px 0}
 .rb-inner{max-width:1120px;margin:0 auto;padding:0 24px}
 .rb-eyebrow{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:16px}
 .rb-headline{font-size:64px;font-weight:600;letter-spacing:-.03em;line-height:1.1;color:#fff;margin-bottom:56px;text-align:left}
@@ -557,7 +557,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .rb-warranty-wrap{max-width:1120px;margin:72px auto 0;padding:0 24px}
 .rb-warranty{background:#fff;border-radius:20px;padding:44px 52px 56px;display:flex;align-items:center;gap:48px;box-shadow:0 24px 64px rgba(0,0,0,0.18)}
 .rb-warranty-left{flex-shrink:0;text-align:center}
-.rb-warranty-years{font-size:80px;font-weight:700;line-height:1;letter-spacing:-.04em;color:#2250CE}
+.rb-warranty-years{font-size:80px;font-weight:700;line-height:1;letter-spacing:-.04em;color:#0344A4}
 .rb-warranty-tag{font-size:18px;font-weight:600;color:#1d1d1f;letter-spacing:-.01em;margin-top:4px}
 .rb-warranty-divider{width:1px;height:80px;background:rgba(0,0,0,0.1);flex-shrink:0}
 .rb-warranty-divider-h{display:none;height:1px;width:100%;background:rgba(0,0,0,0.1);margin:24px 0;flex-shrink:0}
@@ -588,7 +588,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .cc-nav{display:flex;align-items:center;gap:12px;margin-top:24px}
 .cc-dots{display:none}
 .cc-dot{width:6px;height:6px;border-radius:50%;background:rgba(0,0,0,0.15);transition:background .2s,width .2s;cursor:pointer;border:none;padding:0;flex-shrink:0}
-.cc-dot.on{background:#2250CE;width:18px;border-radius:3px}
+.cc-dot.on{background:#0344A4;width:18px;border-radius:3px}
 .cc-arrows{display:flex;gap:8px}
 .cc-arrow{width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(0,0,0,0.15);background:#fff;cursor:pointer;font-size:15px;color:#1d1d1f;line-height:1;transition:background .15s,border-color .15s;font-family:var(--font)}
 .cc-arrow:hover{background:#f5f5f7;border-color:rgba(0,0,0,0.3)}
@@ -605,7 +605,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .fs-mob-img{flex:0 0 52%;height:560px;border-radius:20px;background-size:cover;background-position:center}
 .fs-text:nth-child(odd) .fs-mob-img{order:2}
 .fs-text:nth-child(even) .fs-mob-img{order:0}
-.fs-eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#831843;margin-bottom:18px;background:#fce7f3;border-radius:999px;padding:4px 12px}
+.fs-eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#1e3a8a;margin-bottom:18px;background:#dbeafe;border-radius:999px;padding:4px 12px}
 .fs-heading{font-size:52px;font-weight:600;line-height:1.1;letter-spacing:-.03em;color:#1d1d1f;margin-bottom:22px}
 .fs-body{font-size:20px;line-height:1.65;color:#1d1d1f;margin-bottom:20px}
 .fs-bullets{list-style:none;padding:0;margin:24px 0 0;display:flex;flex-direction:column;gap:0}
@@ -635,11 +635,11 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 }
 /* Spiel section headline */
 .spiel-headline-wrap{max-width:1440px;margin:80px auto 60px;padding:0 24px}
-.spiel-eyebrow{font-size:17px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#2250CE;margin-bottom:16px;text-align:center}
+.spiel-eyebrow{font-size:17px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#0344A4;margin-bottom:16px;text-align:center}
 .spiel-headline{font-size:64px;font-weight:600;line-height:1.35;letter-spacing:-.03em;color:#1d1d1f;text-align:center}
-.spiel-headline em{font-style:italic;font-weight:400;color:#2250CE}
-.fs-heading em{font-style:italic;font-weight:400;color:#2250CE}
-.faq-headline em{font-style:italic;font-weight:400;color:#2250CE}
+.spiel-headline em{font-style:italic;font-weight:400;color:#0344A4}
+.fs-heading em{font-style:italic;font-weight:400;color:#0344A4}
+.faq-headline em{font-style:italic;font-weight:400;color:#0344A4}
 /* Spiel video */
 .spiel-video-wrap{max-width:900px;margin:60px auto 0;padding:0 24px}
 .spiel-video{width:100%;border-radius:20px;overflow:hidden;display:block}
@@ -651,13 +651,19 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .spiel-text{font-size:32px;line-height:2.1;font-weight:400;letter-spacing:-.02em}
 .spiel-word{color:rgba(255,255,255,0.25);transition:color .35s ease;display:inline}
 .spiel-word.on{color:rgba(255,255,255,0.95)}
-.spiel-hl{background:rgba(249,168,212,0.35);border-radius:5px;padding:2px 6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.spiel-hl{background:rgba(147,197,253,0.35);border-radius:5px;padding:2px 6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+/* As Seen In */
+.asi-section{padding:28px 24px;background:#fff;text-align:center}
+.asi-label{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#86868b;margin-bottom:20px}
+.asi-logos{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:24px 36px}
+.asi-logos img{height:72px;width:auto;opacity:1;filter:none}
+@media(max-width:540px){.asi-section{padding:24px 8px}.asi-logos img{height:52px}.asi-logos{gap:20px 12px}}
 /* Ticker ribbon */
-.ticker-section{padding:20px 0;background:#fce7f3;border-top:none;border-bottom:none;overflow:hidden;position:relative}
+.ticker-section{padding:20px 0;background:#dbeafe;border-top:none;border-bottom:none;overflow:hidden;position:relative}
 .ticker-track{display:flex;gap:0;white-space:nowrap;animation:ticker-scroll 55s linear infinite;width:max-content}
 .ticker-track:hover{animation-play-state:paused}
-.ticker-item{display:inline-flex;align-items:center;gap:10px;padding:0 32px;font-size:17px;font-weight:500;color:#831843;letter-spacing:.01em}
-.ticker-item .ticker-dot{width:4px;height:4px;border-radius:50%;background:#f472b6;flex-shrink:0}
+.ticker-item{display:inline-flex;align-items:center;gap:10px;padding:0 32px;font-size:17px;font-weight:500;color:#1e3a8a;letter-spacing:.01em}
+.ticker-item .ticker-dot{width:4px;height:4px;border-radius:50%;background:#93c5fd;flex-shrink:0}
 @keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 /* Buy panel */
 .tf-buy{padding-top:4px;margin-top:52px}
@@ -678,30 +684,30 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .bp-sizes{display:flex;gap:10px;margin-bottom:0}
 .bp-size{flex:1;padding:12px 8px;border:2px solid #e0e0e0;border-radius:12px;text-align:center;cursor:pointer;font-size:14px;font-weight:600;color:#1d1d1f;background:#fff;transition:border-color .15s,background .15s;font-family:var(--font)}
 .bp-size span{display:block;font-size:12px;font-weight:400;color:#86868b;margin-top:2px}
-.bp-size.selected{border-color:#2250CE;background:#eef2fd;color:#2250CE}
+.bp-size.selected{border-color:#0344A4;background:#eef2fd;color:#0344A4}
 .bp-colors{display:flex;gap:12px}
 .bp-color{width:56px;height:56px;border-radius:50%;cursor:pointer;border:3px solid transparent;transition:border-color .15s;flex-shrink:0;position:relative;overflow:hidden;background:#f0f0f0}
 .bp-color img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
-.bp-color.selected{border-color:#2250CE}
-.bp-color.selected::after{content:'';position:absolute;inset:-5px;border:2px solid #2250CE;border-radius:50%;pointer-events:none}
+.bp-color.selected{border-color:#0344A4}
+.bp-color.selected::after{content:'';position:absolute;inset:-5px;border:2px solid #0344A4;border-radius:50%;pointer-events:none}
 .bp-pricing{display:flex;align-items:center;gap:10px;margin-bottom:16px}
 .bp-price-orig{font-size:15px;color:#86868b;text-decoration:line-through;font-weight:400}
 .bp-price-now{font-size:24px;font-weight:700;color:#1d1d1f;letter-spacing:-.02em}
-.bp-price-badge{font-size:12px;font-weight:700;background:#a3e635;color:#1a3a00;padding:4px 10px;border-radius:999px}
+.bp-price-badge{font-size:12px;font-weight:700;background:#0344A4;color:#fff;padding:4px 10px;border-radius:999px}
 .bp-qty{display:flex;align-items:center;gap:16px;margin-bottom:16px}
 .bp-qty-label{font-size:12px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#86868b}
 .bp-qty-ctrl{display:flex;align-items:center;border:1.5px solid #e0e0e0;border-radius:999px;overflow:hidden}
 .bp-qty-btn{width:36px;height:36px;border:none;background:#fff;font-size:18px;color:#1d1d1f;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:var(--font)}
 .bp-qty-val{width:36px;text-align:center;font-size:15px;font-weight:600;color:#1d1d1f}
-.bp-add-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:15px;background:#2250CE;color:#fff;border:none;border-radius:999px;font-size:16px;font-weight:600;cursor:pointer;font-family:var(--font);margin-bottom:10px}
+.bp-add-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:15px;background:#0344A4;color:#fff;border:none;border-radius:999px;font-size:16px;font-weight:600;cursor:pointer;font-family:var(--font);margin-bottom:10px}
 .bp-pay-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:15px;background:#5a31f4;color:#fff;border:none;border-radius:999px;font-size:16px;font-weight:600;cursor:pointer;font-family:var(--font);margin-bottom:14px}
 .bp-security{display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:#86868b;margin-bottom:20px}
-.tf-acc-icon{width:20px;height:20px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#2250CE;color:#fff;font-size:14px;line-height:1;transition:transform .25s ease,background .2s}
-.tf-acc-item.on .tf-acc-icon{transform:rotate(45deg);background:#1a40b0}
+.tf-acc-icon{width:20px;height:20px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#0344A4;color:#fff;font-size:14px;line-height:1;transition:transform .25s ease,background .2s}
+.tf-acc-item.on .tf-acc-icon{transform:rotate(45deg);background:#023a8f}
 .tf-acc-a{max-height:0;overflow:hidden;transition:max-height .32s ease}
 .tf-acc-item.on .tf-acc-a{max-height:220px}
 .tf-acc-a-inner{padding-bottom:16px;font-size:17px;font-weight:400;color:var(--text-dark);line-height:1.45;letter-spacing:-0.01em}
-.tf-trust-card{border:1px solid #d9f99d;border-radius:12px;overflow:visible}
+.tf-trust-card{border:1px solid #bfdbfe;border-radius:12px;overflow:visible}
 .tf-tabs{display:flex;align-items:flex-end;overflow-x:auto;background:rgb(245,245,247);position:relative;border-radius:12px 12px 0 0}
 .tf-tab-sep{width:1px;height:14px;background:#c7c7cc;flex-shrink:0;align-self:center}
 .tf-tab.on+.tf-tab-sep{visibility:hidden}
@@ -709,8 +715,8 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .tf-tab:first-child.on{border-left:none;border-top-left-radius:12px}
 .tf-tab:last-child.on{border-right:none;border-top-right-radius:12px}
 .tf-tab{font-size:12px;font-weight:400;color:#86868b;padding:12px 8px;background:transparent;cursor:pointer;white-space:normal;text-align:center;line-height:1.3;flex:1;border-radius:0;transition:background .18s,color .18s}
-.tf-tab.on{font-weight:600;color:#1a3a00;background:#f7fee7;border:1px solid #d9f99d;border-bottom:none;border-radius:10px 10px 0 0;position:relative;z-index:2;padding:20px 12px;font-size:13px;box-shadow:0 -4px 12px rgba(163,230,53,0.15)}
-.tf-trust-body{padding:16px;border-radius:0 0 11px 11px;background:#f7fee7}
+.tf-tab.on{font-weight:600;color:#1e3a8a;background:#eff6ff;border:1px solid #bfdbfe;border-bottom:none;border-radius:10px 10px 0 0;position:relative;z-index:2;padding:20px 12px;font-size:13px;box-shadow:0 -4px 12px rgba(3,68,164,0.08)}
+.tf-trust-body{padding:16px;border-radius:0 0 11px 11px;background:#eff6ff}
 .tf-panel{display:none}
 .tf-panel.on{display:block}
 .tf-quote-text{font-size:17px;font-weight:400;color:var(--text-dark);line-height:1.45;letter-spacing:-0.01em;margin-bottom:16px}
@@ -722,13 +728,13 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .tf-pill-row{display:flex;align-items:center;gap:10px;margin:10px 0}
 .tf-vpc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px 8px;margin-bottom:4px}
 .tf-vpc-item{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
-.tf-vpc-card{width:44px;height:44px;background:transparent;border:1.5px solid #2250CE;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.tf-vpc-card{width:44px;height:44px;background:#0344A4;border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .tf-vpc-label{font-size:15px;font-weight:700;color:#444;line-height:1.3;letter-spacing:.01em}
 .tf-pill-ic{
   width:24px;height:24px;flex-shrink:0;
   display:flex;align-items:center;justify-content:center;
 }
-.tf-pill-ic svg{stroke:#2250CE;width:22px;height:22px;display:block}
+.tf-pill-ic svg{stroke:#0344A4;width:22px;height:22px;display:block}
 .tf-pill{
   color:var(--text-dark);
   font-size:17px;font-weight:400;
@@ -736,7 +742,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
   min-width:0;flex:1;
 }
 .tf-pill-row{gap:12px;margin:12px 0}
-.tf-tg{background:linear-gradient(135deg,#2250CE 0%,#1355B0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:inline-block}
+.tf-tg{background:linear-gradient(135deg,#0344A4 0%,#023a8f 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:inline-block}
 .tf-rating-row{display:flex;align-items:center;gap:8px;margin-bottom:20px}
 .tf-stars{color:#ff9500;font-size:14px}
 .tf-rlink{font-size:13px;color:var(--blue);text-decoration:none;cursor:pointer}
@@ -788,8 +794,8 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .tf-ac-text b{font-size:13px;font-weight:600;display:block;margin-bottom:3px}
 .tf-ac-text p{font-size:12px;color:var(--text-muted);line-height:1.55}
 /* Stock */
-.tf-stock{font-size:13px;color:#1a7a3a;font-weight:500;display:flex;align-items:center;gap:6px;margin-top:4px}
-.tf-stock-dot{width:8px;height:8px;border-radius:50%;background:#1a7a3a;flex-shrink:0}
+.tf-stock{font-size:13px;color:#0344A4;font-weight:500;display:flex;align-items:center;gap:6px;margin-top:4px}
+.tf-stock-dot{width:8px;height:8px;border-radius:50%;background:#0344A4;flex-shrink:0}
 /* Mobile/desktop quote swap */
 .tf-mobile-quote{display:none;text-align:left;padding:0 16px;margin-bottom:-12px}
 .tf-desk-quote{display:block}
@@ -816,14 +822,14 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .sb-footer{background:#1d1d1f;color:#f5f5f7;font-family:var(--font)}
 .sb-foot-community{border-bottom:1px solid rgba(255,255,255,0.1);padding:64px 48px}
 .sb-foot-community-inner{max-width:1440px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap}
-.sb-foot-community-eyebrow{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#2250CE;margin-bottom:12px}
+.sb-foot-community-eyebrow{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#0344A4;margin-bottom:12px}
 .sb-foot-community-title{font-size:28px;font-weight:600;letter-spacing:-.02em;color:#f5f5f7;margin-bottom:8px;line-height:1.2}
 .sb-foot-community-desc{font-size:15px;color:#a1a1a6;line-height:1.55;max-width:380px}
 .sb-foot-email-form{display:flex;border-radius:980px;overflow:hidden;border:1px solid rgba(255,255,255,0.15);flex-shrink:0;margin-top:4px}
 .sb-foot-email-input{background:rgba(255,255,255,0.06);border:none;padding:13px 22px;font-size:15px;color:#f5f5f7;font-family:var(--font);width:240px;outline:none}
 .sb-foot-email-input::placeholder{color:#8e8e93}
-.sb-foot-email-btn{background:#2250CE;border:none;padding:13px 24px;font-size:14px;font-weight:600;color:#fff;font-family:var(--font);cursor:pointer;white-space:nowrap;letter-spacing:.01em}
-.sb-foot-email-btn:hover{background:#3a7dd0}
+.sb-foot-email-btn{background:#0344A4;border:none;padding:13px 24px;font-size:14px;font-weight:600;color:#fff;font-family:var(--font);cursor:pointer;white-space:nowrap;letter-spacing:.01em}
+.sb-foot-email-btn:hover{background:#0344A4}
 .sb-foot-main{max-width:1440px;margin:0 auto;padding:56px 48px;display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr 1fr;gap:40px;border-bottom:1px solid rgba(255,255,255,0.1)}
 .sb-foot-col-title{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#a1a1a6;margin-bottom:20px}
 .sb-foot-contact-item{margin-bottom:16px}
@@ -845,9 +851,9 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .rvw-section{background:#fff;padding:120px 0 100px}
 .rvw-inner{max-width:1440px;margin:0 auto;padding:0}
 .rvw-header{margin-bottom:64px;padding:0 24px}
-.rvw-eyebrow{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#2250CE;margin-bottom:16px}
+.rvw-eyebrow{font-size:11px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#0344A4;margin-bottom:16px}
 .rvw-heading{font-size:64px;font-weight:600;letter-spacing:-.03em;line-height:1.1;color:#1d1d1f}
-.rvw-heading em{font-style:italic;font-weight:400;color:#2250CE}
+.rvw-heading em{font-style:italic;font-weight:400;color:#0344A4}
 .rvw-heading sup{font-size:24px;vertical-align:super;line-height:0}
 .rvw-summary{display:grid;grid-template-columns:1fr 1fr 2fr;gap:48px;padding:48px 24px 56px;border-top:1px solid rgba(0,0,0,0.08);border-bottom:1px solid rgba(0,0,0,0.08);margin-bottom:40px;align-items:start}
 .rvw-score-num{font-size:72px;font-weight:600;line-height:1;letter-spacing:-.04em;color:#1d1d1f}
@@ -915,7 +921,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
   border-bottom:1px solid rgba(0,0,0,0.07);transition:color .15s;
 }
 .gnav-mobile-links li:last-child a{border-bottom:none}
-.gnav-mobile-links li a:hover{color:#2250CE}
+.gnav-mobile-links li a:hover{color:#0344A4}
 
 /* ── 1024px — tablet landscape ────────────────────────── */
 @media(max-width:1024px){
@@ -1130,7 +1136,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 
 
 /* ── Value Prop Cards ─────────────────────────────────────────── */
-.vpc-section{padding:52px 24px;background:#2250CE}
+.vpc-section{padding:52px 24px;background:#0344A4}
 .vpc-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
 .vpc-item{display:flex;flex-direction:column;align-items:center;gap:12px}
 .vpc-card{background:#fff;border-radius:999px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -1157,8 +1163,8 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 #tp1 .tf-pill-row, #tp3 .tf-pill-row{margin:6px 0}
 #tp1 .tf-pill-ic, #tp3 .tf-pill-ic{width:16px;height:16px}
 #tp1 .tf-pill-ic svg, #tp3 .tf-pill-ic svg{width:14px;height:14px}
-#tp1 .tf-pill-ic circle, #tp3 .tf-pill-ic circle{fill:none;stroke:#2250CE;stroke-width:1.5}
-#tp1 .tf-pill-ic path, #tp3 .tf-pill-ic path{stroke:#2250CE}
+#tp1 .tf-pill-ic circle, #tp3 .tf-pill-ic circle{fill:none;stroke:#0344A4;stroke-width:1.5}
+#tp1 .tf-pill-ic path, #tp3 .tf-pill-ic path{stroke:#0344A4}
 
 /* ── Comparison Cards (new layout with overflow) ─────────────── */
 .cc-outer{overflow:hidden;position:relative;cursor:grab;user-select:none;margin-right:calc(min(50vw,720px) - 50vw - 24px)}
@@ -1181,44 +1187,16 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 @media(max-width:900px){.tf-inner{display:flex;flex-direction:column;gap:16px;width:100%}.tf-carousel{margin-left:0;width:100%;flex:none;margin-bottom:24px}.tf-buy{min-width:0;max-width:100%;width:100%;flex:none}}
 @media(max-width:540px){.tf-segs .tf-seg{padding:9px 8px;font-size:13px}}
 
-/* ── Background childhood SVG decorations ─────────────── */
-#bg-deco{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
-#bg-deco svg{position:absolute;opacity:0.13}
-@media(max-width:768px){#bg-deco{display:none}}
-@keyframes bgFloat{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-20px) rotate(10deg)}}
-@keyframes bgFloatB{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(-8deg)}}
-@keyframes bgFloatC{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-24px) scale(1.1)}}
-@keyframes bgSpin{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-10px) rotate(180deg)}}
 </style>
 <script src="file:///D:/Deepseek/v2_files/lucide.min.js.download"></script>
 </head>
 <body data-new-gr-c-s-check-loaded="14.1305.0" data-gr-ext-installed="" cz-shortcut-listen="true">
 
-<!-- ═══ BACKGROUND CHILDHOOD DECORATIONS ════════════════ -->
-<div id="bg-deco" aria-hidden="true">
-
-  <!-- ★ Star — top left -->
-  <svg style="left:4%;top:14%;animation:bgFloat 8s ease-in-out infinite" width="52" height="52" viewBox="0 0 32 32" fill="#2250CE"><path d="M16 2l3.1 6.4 7 1-5 4.9 1.2 7L16 18l-6.3 3.3 1.2-7-5-4.9 7-1z"></path></svg>
-
-  <!-- ○ Bubble — top right -->
-  <svg style="left:89%;top:10%;animation:bgFloatB 10s ease-in-out infinite 1s" width="64" height="64" viewBox="0 0 40 40" fill="none" stroke="#ff6b9d" stroke-width="2.2"><circle cx="20" cy="20" r="16"></circle></svg>
-
-
-  <!-- ♥ Heart — mid right -->
-  <svg style="left:91%;top:52%;animation:bgFloat 11s ease-in-out infinite 3s" width="48" height="44" viewBox="0 0 30 28" fill="#ff6b9d"><path d="M15 26S2 17 2 9a7 7 0 0 1 13-3.5A7 7 0 0 1 28 9c0 8-13 17-13 17z"></path></svg>
-
-  <!-- ★ Star — bottom right -->
-  <svg style="left:84%;top:78%;animation:bgFloatB 7s ease-in-out infinite 1.5s" width="38" height="38" viewBox="0 0 22 22" fill="#c44cff"><path d="M11 1l2.1 4.4 4.9.7-3.5 3.4.8 4.9L11 12l-4.3 2.4.8-4.9L4 6.1l4.9-.7z"></path></svg>
-
-  <!-- ○ Bubble — bottom left -->
-  <svg style="left:6%;top:80%;animation:bgFloatC 13s ease-in-out infinite 0.8s" width="56" height="56" viewBox="0 0 34 34" fill="none" stroke="#2250CE" stroke-width="2"><circle cx="17" cy="17" r="13"></circle></svg>
-
-</div>
 
 <!-- ═══ GLOBAL NAV ═══════════════════════════════════════ -->
 <nav class="gnav" aria-label="Global">
   <div class="gnav-inner">
-    <a href="file:///D:/Deepseek/v10.html#" class="gnav-logo"><img src="./v17_files/sonic brush kids logo (vector)-01.jpg" alt="Sonic Brush"></a>
+    <a href="file:///D:/Deepseek/v10.html#" class="gnav-logo"><img src="./v18_files/sonic brush kids logo (vector)-01.jpg" alt="Sonic Brush"></a>
     <ul class="gnav-links" role="list">
       <li><a href="http://187.127.174.174:9876/v2.html#">Home</a></li>
       <li><a href="http://187.127.174.174:9876/v2.html#">Shop</a></li>
@@ -1267,14 +1245,14 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
     <!-- MOBILE QUOTE (visible only on mobile) -->
     <div class="tf-mobile-quote">
       <p style="font-size:24px;font-weight:700;font-style:italic;color:#1d1d1f;margin:0 0 4px">"Finally, no more brushing fights."</p>
-      <p style="font-size:17px;color:#1d1d1f;margin:0"><span style="display:inline-flex;gap:2px;vertical-align:middle;margin-right:4px"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s tp-half">★</span></span> Rated 4.5 on Trustpilot</p>
+      <span style="display:inline-flex;align-items:center;gap:10px;margin-top:4px"><img src="./v18_files/stars-4.5.svg" alt="Trustpilot 4.5 stars" style="height:28px;width:auto;max-width:120px;display:block;flex-shrink:0"><span style="font-size:14px;font-weight:600;color:#1d1d1f;white-space:nowrap">Trusted By Parents</span><span style="display:inline-flex;align-items:center;gap:4px;flex-shrink:0"><svg aria-hidden="true" viewBox="0 0 16 16" style="fill:#00b67a;flex-shrink:0" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.88 6.225H16l-4.929 3.504-3.047 2.149-4.953 3.504L4.952 9.73 0 6.225h6.119L8 .572l1.881 5.653Zm1.596 4.812L8 11.9l4.929 3.527-1.453-4.392Z"></path></svg><span style="font-size:13px;font-weight:700;color:#00b67a;white-space:nowrap">Trustpilot</span></span></span>
     </div>
 
     <!-- IMAGE CAROUSEL ────────────────────────────────── -->
     <div class="tf-carousel">
       <div class="car-img-wrap">
         <div class="car-outer" id="carOuter">
-          <div class="car-track" id="carTrack" style="gap: 0px; transform: translateX(-3480px);">
+          <div class="car-track" id="carTrack" style="gap: 0px; transform: translateX(-4176px);">
 
             <!-- Slide 9 — Lifestyle 5 (leftmost in DOM) -->
             <div class="car-slide" style="width: 696px;">
@@ -1306,24 +1284,9 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
               <div class="car-img" style="background:url(&#39;https://drive.google.com/thumbnail?id=1x8UDKNskUmD6t7rTJXA6W9_ux8iFLhte&amp;sz=w800&#39;) center/cover no-repeat"></div>
             </div>
 
-            <!-- Slide 3 — Yellow -->
+            <!-- Slide 0 — Dynamic variant image (rightmost, shown on load) -->
             <div class="car-slide" style="width: 696px;">
-              <div class="car-img" style="background:url(&#39;https://lh3.googleusercontent.com/d/1fiQBKQ80OpwkEucMCL1DbMB3IqhT1EbC&#39;) center/cover no-repeat"></div>
-            </div>
-
-            <!-- Slide 2 — White -->
-            <div class="car-slide" style="width: 696px;">
-              <div class="car-img" style="background:url(&#39;https://lh3.googleusercontent.com/d/1DktrULHso-TqkThRx3p0tv1jk7jpB7yx&#39;) center/cover no-repeat"></div>
-            </div>
-
-            <!-- Slide 1 — Pink -->
-            <div class="car-slide" style="width: 696px;">
-              <div class="car-img" style="background:url(&#39;https://lh3.googleusercontent.com/d/1TMaMFWGj4cwDkiY_ONtMw0gI4f4QVycd&#39;) center/cover no-repeat"></div>
-            </div>
-
-            <!-- Slide 0 — Blue (rightmost, shown on load) -->
-            <div class="car-slide" style="width: 696px;">
-              <div class="car-img" style="background:url(&#39;https://lh3.googleusercontent.com/d/1DrdNeruYeMXIdPFecurPGI1aoEVGbPkl&#39;) center/cover no-repeat"></div>
+              <div class="car-img" id="carVariantSlide" style="background:url(&#39;https://lh3.googleusercontent.com/d/13i7vP4-iVFkUhMNFElfPrieFTGGc1XMa&#39;) center/cover no-repeat"></div>
             </div>
 
           </div>
@@ -1336,66 +1299,63 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
         <!-- Controls: dots overlaid on image -->
         <div class="car-controls">
           <div class="car-dots-pill">
-            <div class="car-dot" onclick="carGo(0)"></div>
+            <div class="car-dot on" onclick="carGo(0)"></div>
             <div class="car-dot" onclick="carGo(1)"></div>
             <div class="car-dot" onclick="carGo(2)"></div>
             <div class="car-dot" onclick="carGo(3)"></div>
-            <div class="car-dot on" onclick="carGo(4)"></div>
+            <div class="car-dot" onclick="carGo(4)"></div>
             <div class="car-dot" onclick="carGo(5)"></div>
           </div>
         </div>
       </div>
       <!-- Thumbnails -->
       <div class="car-thumbs">
-        <div class="car-thumb" onclick="carGo(0)" data-color="0" style="background-image:url(&#39;https://lh3.googleusercontent.com/d/1DrdNeruYeMXIdPFecurPGI1aoEVGbPkl&#39;)"></div>
-        <div class="car-thumb" onclick="carGo(1)" data-color="1" style="background-image:url(&#39;https://lh3.googleusercontent.com/d/1TMaMFWGj4cwDkiY_ONtMw0gI4f4QVycd&#39;)"></div>
-        <div class="car-thumb" onclick="carGo(2)" data-color="2" style="background-image:url(&#39;https://lh3.googleusercontent.com/d/1DktrULHso-TqkThRx3p0tv1jk7jpB7yx&#39;)"></div>
-        <div class="car-thumb" onclick="carGo(3)" data-color="3" style="background-image:url(&#39;https://lh3.googleusercontent.com/d/1fiQBKQ80OpwkEucMCL1DbMB3IqhT1EbC&#39;)"></div>
-        <div class="car-thumb on" onclick="carGo(4)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=1x8UDKNskUmD6t7rTJXA6W9_ux8iFLhte&amp;sz=w200&#39;)"></div>
-        <div class="car-thumb" onclick="carGo(5)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=1OtjYlz4Pn403neJZOoPU7cEw5z5XVUCz&amp;sz=w200&#39;)"></div>
-        <div class="car-thumb" onclick="carGo(6)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=12WYo-RauiHyx8QY6vmVvzKrO2vtK04vN&amp;sz=w200&#39;)"></div>
-        <div class="car-thumb" onclick="carGo(7)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=1P9Ehbjrhw85fq3sczphWmbbbZuQD7w0B&amp;sz=w200&#39;)"></div>
-        <div class="car-thumb" onclick="carGo(8)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=1tPiGwrYcBOKtmSiQGDC20tC8ABFWqT2B&amp;sz=w200&#39;)"></div>
-        <div class="car-thumb" onclick="carGo(9)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=1XhHn_PkPNTpBWTmsujLGzBBxCvvG1_Cz&amp;sz=w200&#39;)"></div>
+        <div class="car-thumb on" id="carVariantThumb" onclick="carGo(0)" style="background-image:url(&#39;https://lh3.googleusercontent.com/d/13i7vP4-iVFkUhMNFElfPrieFTGGc1XMa&#39;)"></div>
+        <div class="car-thumb" onclick="carGo(1)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=1x8UDKNskUmD6t7rTJXA6W9_ux8iFLhte&amp;sz=w200&#39;)"></div>
+        <div class="car-thumb" onclick="carGo(2)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=1OtjYlz4Pn403neJZOoPU7cEw5z5XVUCz&amp;sz=w200&#39;)"></div>
+        <div class="car-thumb" onclick="carGo(3)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=12WYo-RauiHyx8QY6vmVvzKrO2vtK04vN&amp;sz=w200&#39;)"></div>
+        <div class="car-thumb" onclick="carGo(4)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=1P9Ehbjrhw85fq3sczphWmbbbZuQD7w0B&amp;sz=w200&#39;)"></div>
+        <div class="car-thumb" onclick="carGo(5)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=1tPiGwrYcBOKtmSiQGDC20tC8ABFWqT2B&amp;sz=w200&#39;)"></div>
+        <div class="car-thumb" onclick="carGo(6)" style="background-image:url(&#39;https://drive.google.com/thumbnail?id=1XhHn_PkPNTpBWTmsujLGzBBxCvvG1_Cz&amp;sz=w200&#39;)"></div>
       </div>
     </div><!-- /carousel -->
 
     <!-- RIGHT: BUY PANEL ─────────────────────────────── -->
     <div class="tf-buy">
-      <span style="display:inline-flex;align-items:center;gap:6px;background:#eef2fd;border:1px solid #c5d2f6;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:600;color:#2250CE;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#2250CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2c2.5 0 5 1.5 5 4 0 4-5 8-5 8S3 10 3 6c0-2.5 2.5-4 5-4z"></path></svg>
+      <span style="display:inline-flex;align-items:center;gap:6px;background:#eef2fd;border:1px solid #c5d2f6;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:600;color:#0344A4;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px">
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#0344A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2c2.5 0 5 1.5 5 4 0 4-5 8-5 8S3 10 3 6c0-2.5 2.5-4 5-4z"></path></svg>
         Dentist Recommended
       </span>
       <p class="tf-product-name">Sonic Brush® Kids</p>
       <h2 class="tf-tagline"><span class="tf-tg">Bedtime brushing battles? <em>Over.</em></span></h2>
       <span class="tf-desk-quote">
-      <p style="font-size:15px;color:#1d1d1f;margin:0 0 14px"><span style="display:inline-flex;gap:2px;vertical-align:middle;margin-right:4px"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s tp-half">★</span></span> Rated 4.5 on Trustpilot</p>
+      <span style="display:inline-flex;align-items:center;gap:10px;margin-bottom:14px"><img src="./v18_files/stars-4.5.svg" alt="Trustpilot 4.5 stars" style="height:28px;width:auto;max-width:120px;display:block;flex-shrink:0"><span style="font-size:14px;font-weight:600;color:#1d1d1f;white-space:nowrap">Trusted By Parents</span><span style="display:inline-flex;align-items:center;gap:4px;flex-shrink:0"><svg aria-hidden="true" viewBox="0 0 16 16" style="fill:#00b67a;flex-shrink:0" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.88 6.225H16l-4.929 3.504-3.047 2.149-4.953 3.504L4.952 9.73 0 6.225h6.119L8 .572l1.881 5.653Zm1.596 4.812L8 11.9l4.929 3.527-1.453-4.392Z"></path></svg><span style="font-size:13px;font-weight:700;color:#00b67a;white-space:nowrap">Trustpilot</span></span></span>
       </span>
-      <p style="font-size:17px;color:#1d1d1f;margin:8px 0 16px;font-weight:400">The automatic toothbrush that turns <strong style="color:#2250CE;font-weight:700;font-style:italic">brushing time into play time</strong> and cleans all their teeth at once - in just 30 seconds.</p>
+      <p style="font-size:17px;color:#1d1d1f;margin:8px 0 16px;font-weight:400">The automatic toothbrush that turns <strong style="color:#0344A4;font-weight:700;font-style:italic">brushing time into play time</strong> and cleans all their teeth at once - in just 30 seconds.</p>
       <hr class="tf-sep">
       <div class="tf-vpc-grid">
         <div class="tf-vpc-item">
-          <div class="tf-vpc-card"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+          <img src="./v18_files/Vector_7_50x50.svg" alt="30 Seconds" style="width:44px;height:44px">
           <span class="tf-vpc-label">Cleans in<br>30 Seconds</span>
         </div>
         <div class="tf-vpc-item">
-          <div class="tf-vpc-card"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path d="M9 12a3 3 0 106 0 3 3 0 00-6 0"></path><path d="M12 3v2M12 19v2M3 12h2M19 12h2"></path></svg></div>
+          <img src="./v18_files/Frame_23_f0c127c2-70ee-400b-b289-38fe849e6f3b_50x50.svg" alt="360 Coverage" style="width:44px;height:44px">
           <span class="tf-vpc-label">360° Full<br>Coverage</span>
         </div>
         <div class="tf-vpc-item">
-          <div class="tf-vpc-card"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5.5-3.8 9.7-8 11C8 21.7 4 17.5 4 12V7l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg></div>
+          <img src="./v18_files/Group_13_79c3c433-9efb-45a4-8413-9eb3f3e39b98_50x50.svg" alt="Safe and Gentle" style="width:44px;height:44px">
           <span class="tf-vpc-label">Safe &amp;<br>Gentle</span>
         </div>
         <div class="tf-vpc-item">
-          <div class="tf-vpc-card"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3c-1.5 0-4 1-4 4.5 0 2 .5 3.5 1 5.5s1 5 2.5 5 1.5-2 2.5-2 1 2 2.5 2 2-3.5 2.5-5 1-3.5 1-5.5C16 4 13.5 3 12 3S9.5 3 8 3z"></path><path d="M9 3c0-1 .5-2 2-2s2 1 2 2"></path></svg></div>
+          <img src="./v18_files/Group_12_50x50.svg" alt="Deep and Effective" style="width:44px;height:44px">
           <span class="tf-vpc-label">Deep &amp;<br>Effective</span>
         </div>
         <div class="tf-vpc-item">
-          <div class="tf-vpc-card"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7"></circle><circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="10" cy="12" r="1" fill="#2250CE" stroke="none"></circle><circle cx="14" cy="12" r="1" fill="#2250CE" stroke="none"></circle><path d="M10 16c.5.8 1 1.2 2 1.2s1.5-.4 2-1.2"></path><ellipse cx="12" cy="14" rx="2" ry="1"></ellipse></svg></div>
+          <div class="tf-vpc-card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7"></circle><circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="10" cy="12" r="1" fill="#fff" stroke="none"></circle><circle cx="14" cy="12" r="1" fill="#fff" stroke="none"></circle><path d="M10 16c.5.8 1 1.2 2 1.2s1.5-.4 2-1.2"></path><ellipse cx="12" cy="14" rx="2" ry="1"></ellipse></svg></div>
           <span class="tf-vpc-label">Kids Friendly<br>Design</span>
         </div>
         <div class="tf-vpc-item">
-          <div class="tf-vpc-card"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 7 5 10.5 5 14a7 7 0 0014 0c0-3.5-3-7-7-12z"></path><path d="M9 16c.5 1 1.5 2 3 2s2.5-1 3-2"></path></svg></div>
+          <div class="tf-vpc-card"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 7 5 10.5 5 14a7 7 0 0014 0c0-3.5-3-7-7-12z"></path><path d="M9 16c.5 1 1.5 2 3 2s2.5-1 3-2"></path></svg></div>
           <span class="tf-vpc-label">Waterproof &amp;<br>Durable</span>
         </div>
       </div>
@@ -1405,17 +1365,17 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
       <div class="bp-section">
         <div class="bp-label">Size</div>
         <div class="bp-sizes">
-          <button class="bp-size selected" onclick="bpSelectSize(this)">Ages 6–7<span>Smaller jaw</span></button>
-          <button class="bp-size" onclick="bpSelectSize(this)">Ages 8–15<span>Larger jaw</span></button>
+          <button class="bp-size selected" data-size="6-7" onclick="bpSelectSize(this)">Ages 6–7<span>Smaller jaw</span></button>
+          <button class="bp-size" data-size="8-15" onclick="bpSelectSize(this)">Ages 8–15<span>Larger jaw</span></button>
         </div>
       </div>
       <div class="bp-section">
         <div class="bp-label">Color</div>
         <div class="bp-colors">
-          <div class="bp-color" title="Blue" data-color-idx="0" onclick="bpSelectColor(this)"><img src="./v17_files/Sonic Brush Kids (8).png" alt="Blue"></div>
-          <div class="bp-color" title="Pink" data-color-idx="1" onclick="bpSelectColor(this)"><img src="./v17_files/Sonic Brush Kids (11).png" alt="Pink"></div>
-          <div class="bp-color" title="White" data-color-idx="2" onclick="bpSelectColor(this)"><img src="./v17_files/Sonic Brush Kids (10).png" alt="White"></div>
-          <div class="bp-color" title="Yellow" data-color-idx="3" onclick="bpSelectColor(this)"><img src="./v17_files/Sonic Brush Kids (6).png" alt="Yellow"></div>
+          <div class="bp-color" title="Blue" data-color-idx="0" onclick="bpSelectColor(this)"><img src="./v18_files/Sonic Brush Kids (8).png" alt="Blue"></div>
+          <div class="bp-color" title="Pink" data-color-idx="1" onclick="bpSelectColor(this)"><img src="./v18_files/Sonic Brush Kids (11).png" alt="Pink"></div>
+          <div class="bp-color" title="White" data-color-idx="2" onclick="bpSelectColor(this)"><img src="./v18_files/Sonic Brush Kids (10).png" alt="White"></div>
+          <div class="bp-color" title="Yellow" data-color-idx="3" onclick="bpSelectColor(this)"><img src="./v18_files/Sonic Brush Kids (6).png" alt="Yellow"></div>
         </div>
       </div>
       <div class="bp-pricing">
@@ -1471,35 +1431,35 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             <div id="tp1" class="tf-panel">
               <div class="tf-pills">
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Cleans all teeth simultaneously</b> - no need to brush tooth by tooth</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>30-second routine</b> kids actually complete without being asked twice</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Soft silicone bristles</b> designed specifically for children's gums</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>FDA-compliant, non-toxic, nitrosamine-free</b> materials</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Uses the BASS brushing technique</b> at a 45° bristle angle</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>No manual dexterity or brushing technique</b> needed from your child</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Endorsed by a named, licensed dentist</b> - not a stock-photo badge</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Two age-specific sizes</b> for a proper mouthpiece fit</span>
                 </div>
               </div>
@@ -1527,31 +1487,31 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             <div id="tp3" class="tf-panel">
               <div class="tf-pills">
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Manufacturer's warranty</b> covers defects in materials and workmanship</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Free replacement</b> for qualifying issues</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Customer service</b> by phone (+1-985-257-7280), email, and contact form</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Free shipping</b> on every order</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Hassle-free return process</b></span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Box includes:</b> Sonic Brush Kids, charging station, USB cable, user manual</span>
                 </div>
                 <div class="tf-pill-row">
-                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#2250CE" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#2250CE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                  <span class="tf-pill-ic"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8.5" stroke="#0344A4" stroke-width="1.5"></circle><path d="M6.5 10l2.5 2.5 4.5-4.5" stroke="#0344A4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
                   <span class="tf-pill"><b>Replacement mouthpieces</b> available separately (recommended every 3-4 months)</span>
                 </div>
               </div>
@@ -1596,6 +1556,18 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
   </div><!-- /tf-inner -->
 </section>
 
+<!-- ═══ AS SEEN IN ═══════════════════════════════════════ -->
+<div class="asi-section">
+  <p class="asi-label">As Seen In</p>
+  <div class="asi-logos">
+    <img src="./v18_files/Design_sans_titre_93.png" alt="Press logo">
+    <img src="./v18_files/3_c10d3b0b-cefb-4928-aca5-f05982d36650.png" alt="Press logo">
+    <img src="./v18_files/Design_sans_titre_11.png" alt="Press logo">
+    <img src="./v18_files/Design_sans_titre_13.png" alt="Press logo">
+    <img src="./v18_files/1_0f59b7e4-5803-479e-b8d3-1c76a4ad9c81.png" alt="Press logo">
+  </div>
+</div>
+
 <!-- ═══ TICKER RIBBON ══════════════════════════════════════ -->
 <div class="ticker-section">
   <div class="ticker-track">
@@ -1637,32 +1609,32 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
   <div class="vpc-grid">
 
     <div class="vpc-item">
-      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div></div>
+      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div></div>
       <span class="vpc-label">30-Second Routine</span>
     </div>
 
     <div class="vpc-item">
-      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M8.5 13.5L7.5 21l4.5-2.5 4.5 2.5-1-7.5"></path></svg></div></div>
+      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M8.5 13.5L7.5 21l4.5-2.5 4.5 2.5-1-7.5"></path></svg></div></div>
       <span class="vpc-label">All Teeth<br>Simultaneously</span>
     </div>
 
     <div class="vpc-item">
-      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5.5-3.8 9.7-8 11C8 21.7 4 17.5 4 12V7l8-4z"></path></svg></div></div>
+      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5.5-3.8 9.7-8 11C8 21.7 4 17.5 4 12V7l8-4z"></path></svg></div></div>
       <span class="vpc-label">Soft Silicone<br>Bristles</span>
     </div>
 
     <div class="vpc-item">
-      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"></path></svg></div></div>
+      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"></path></svg></div></div>
       <span class="vpc-label">One-Button Simple</span>
     </div>
 
     <div class="vpc-item">
-      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13.5L14 2l-2 8.5H20L10 22l2-8.5H4z"></path></svg></div></div>
+      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13.5L14 2l-2 8.5H20L10 22l2-8.5H4z"></path></svg></div></div>
       <span class="vpc-label">FDA-Compliant Safe</span>
     </div>
 
     <div class="vpc-item">
-      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3.5"></circle><circle cx="17" cy="7" r="2.5"></circle><circle cx="7" cy="17" r="3.5"></circle><circle cx="17" cy="17" r="2.5"></circle></svg></div></div>
+      <div class="vpc-card"><div class="vpc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3.5"></circle><circle cx="17" cy="7" r="2.5"></circle><circle cx="7" cy="17" r="3.5"></circle><circle cx="17" cy="17" r="2.5"></circle></svg></div></div>
       <span class="vpc-label">Dentist Recommended</span>
     </div>
 
@@ -1672,11 +1644,11 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 <!-- ═══ SALES SPIEL ════════════════════════════════════════ -->
 <section class="spiel-section">
   <div class="spiel-inner">
-    <p class="spiel-text"><span class="spiel-word"><span class="spiel-word"><span class="spiel-word">You</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">know</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">the</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">routine.</span></span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word"><span class="spiel-word">"Did</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">you</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">brush?"</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">"Yes."</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">"The</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">toothbrush</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">is</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">dry."</span></span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">Every</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">night,</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">the</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">same</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">negotiation.</span></span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word"><span class="spiel-word">Sonic</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">Brush</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">Kids</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">was</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">designed</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">by</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">parents</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">who</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">were</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">tired</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">of</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">it.</span></span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">Your</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">child</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">bites</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">down</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">on</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">a</span></span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word"><span class="spiel-word">soft</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">silicone</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">mouthpiece,</span></span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">presses</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">one</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">button,</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">and</span></span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word"><span class="spiel-word">30</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">seconds</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">later</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">every</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">tooth</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">is</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">gently</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">cleaned</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">at</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">once.</span></span></span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word"><span class="spiel-word">No</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">brushing</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">skill</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">needed.</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">No</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">nightly</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">argument.</span></span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">Just</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">a</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">calmer</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">bedtime</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">and</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">a</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">cleaner</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">mouth.</span></span></span> <span class="spiel-hl"><span class="spiel-word"><span class="spiel-word"><span class="spiel-word">That's</span></span></span> <span class="spiel-word"><span class="spiel-word"><span class="spiel-word">it.</span></span></span></span></p>
+    <p class="spiel-text"><span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">You</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">know</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">the</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">routine.</span></span></span> <span class="spiel-hl"><span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">"Did</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">you</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">brush?"</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">"Yes."</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">"The</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">toothbrush</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">is</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">dry."</span></span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">Every</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">night,</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">the</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">same</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">negotiation.</span></span></span> <span class="spiel-hl"><span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">Sonic</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">Brush</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">Kids</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">was</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">designed</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">by</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">parents</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">who</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">were</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">tired</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">of</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">it.</span></span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">Your</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">child</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">bites</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">down</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">on</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">a</span></span></span> <span class="spiel-hl"><span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">soft</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">silicone</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">mouthpiece,</span></span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">presses</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">one</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">button,</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">and</span></span></span> <span class="spiel-hl"><span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">30</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">seconds</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">later</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">every</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">tooth</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">is</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">gently</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">cleaned</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">at</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">once.</span></span></span></span> <span class="spiel-hl"><span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">No</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">brushing</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">skill</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">needed.</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">No</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">nightly</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">argument.</span></span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">Just</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">a</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">calmer</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">bedtime</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">and</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">a</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">cleaner</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">mouth.</span></span></span> <span class="spiel-hl"><span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">That's</span></span></span> <span class="spiel-word on"><span class="spiel-word on"><span class="spiel-word on">it.</span></span></span></span></p>
   </div>
   <div class="spiel-video-wrap">
     <div class="spiel-video">
-      <img src="./v17_files/The Struggle.png" alt="Product image">
+      <img src="./v18_files/The Struggle.png" alt="Product image">
     </div>
     <p class="spiel-video-caption"><span class="vcap-q">Tired of the fight?</span><span class="vcap-a"> Watch it disappear.</span></p>
   </div>
@@ -1698,14 +1670,14 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
         <h3 class="fs-heading">Soft enough for the most sensitive mouth<br><em>in your house.</em></h3>
         <p class="fs-body"><span class="spiel-hl">Food-grade medical silicone.</span> The kind used in baby products. It flexes, it gives, and it sits gently over every tooth without pressure. Kids who resist stiff bristles <span class="spiel-hl">accept this on the first try.</span></p>
         <ul class="fs-bullets">
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Medical-grade silicone, softer than nylon, safer than plastic</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>FDA-compliant and nitrosamine-free. Nothing harmful touches their mouth</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Gentler on sensitive teeth and gums than any brush they've tried</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Medical-grade silicone, softer than nylon, safer than plastic</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>FDA-compliant and nitrosamine-free. Nothing harmful touches their mouth</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Gentler on sensitive teeth and gums than any brush they've tried</li>
         </ul>
         <div class="fs-testimonial">
           <div class="fs-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="fs-tq">"My daughter has sensory issues and hated brushing. She actually asks to use this now. The silicone is that soft."</p>
-          <div class="fs-ta-row"><img class="fs-avatar" src="./v17_files/64" alt="Priya M."><span class="fs-ta">Priya M., parent</span></div>
+          <div class="fs-ta-row"><img class="fs-avatar" src="./v18_files/64" alt="Priya M."><span class="fs-ta">Priya M., parent</span></div>
         </div>
         </div>
       </div>
@@ -1716,14 +1688,14 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
         <h3 class="fs-heading">They bite down. They press the button.<br><em>You move on with your evening.</em></h3>
         <p class="fs-body">The mouthpiece holds bristles at a <span class="spiel-hl">45° angle.</span> Sonic vibration does the rest. <span class="spiel-hl">Every surface, every tooth, every time.</span></p>
         <ul class="fs-bullets">
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>BASS brushing technique delivered automatically, every single time</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>360° simultaneous cleaning — no surface left untouched</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>30 seconds replaces 2–3 minutes of inconsistent manual effort</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>BASS brushing technique delivered automatically, every single time</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>360° simultaneous cleaning — no surface left untouched</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>30 seconds replaces 2–3 minutes of inconsistent manual effort</li>
         </ul>
         <div class="fs-testimonial">
           <div class="fs-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="fs-tq">"My son was done before I finished flossing my own teeth. I stood there in disbelief."</p>
-          <div class="fs-ta-row"><img class="fs-avatar" src="./v17_files/64(1)" alt="Mark T."><span class="fs-ta">Mark T., father of two</span></div>
+          <div class="fs-ta-row"><img class="fs-avatar" src="./v18_files/64(1)" alt="Mark T."><span class="fs-ta">Mark T., father of two</span></div>
         </div>
         </div>
       </div>
@@ -1734,14 +1706,14 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
         <h3 class="fs-heading">The brushing fight doesn't end gradually.<br><em>It ends tonight.</em></h3>
         <p class="fs-body">Night One - It's new. It buzzes. They want to try it. <span class="spiel-hl">Thirty seconds later - done. No negotiation.</span> Night Two - They pick it up themselves. Maybe before you even ask. Night Three - It's just part of bedtime now. The argument is gone. <span class="spiel-hl">It's just... gone.</span></p>
         <ul class="fs-bullets">
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>First week: brushing becomes a non-event in your household</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>First month: your child brushes independently without reminders</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>First dental visit: the hygienist notices the difference</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>First week: brushing becomes a non-event in your household</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>First month: your child brushes independently without reminders</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>First dental visit: the hygienist notices the difference</li>
         </ul>
         <div class="fs-testimonial">
           <div class="fs-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="fs-tq">"Our dentist said 'whatever you changed, keep doing it.' Best $60 I've ever spent."</p>
-          <div class="fs-ta-row"><img class="fs-avatar" src="./v17_files/64(2)" alt="Jennifer K."><span class="fs-ta">Jennifer K., mom of three</span></div>
+          <div class="fs-ta-row"><img class="fs-avatar" src="./v18_files/64(2)" alt="Jennifer K."><span class="fs-ta">Jennifer K., mom of three</span></div>
         </div>
         </div>
       </div>
@@ -1752,14 +1724,14 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
         <h3 class="fs-heading">Unbox tonight.<br><em>First brush tonight.</em></h3>
         <p class="fs-body">Sonic Brush Kids. Charging station. USB cable. User manual. <span class="spiel-hl">Four colors. Sized for their age.</span> Plug in, charge up, and go.</p>
         <ul class="fs-bullets">
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Complete kit: brush, dock, cable, manual. Nothing else to buy</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Two jaw-matched sizes for ages 6–7 and 8–15</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#2250CE"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>4-hour battery = weeks of brushing between charges</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Complete kit: brush, dock, cable, manual. Nothing else to buy</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Two jaw-matched sizes for ages 6–7 and 8–15</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>4-hour battery = weeks of brushing between charges</li>
         </ul>
         <div class="fs-testimonial">
           <div class="fs-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="fs-tq">"Bought the yellow one for my nephew's birthday. His mom texted me that night and said 'this is the best gift anyone has ever given us.'"</p>
-          <div class="fs-ta-row"><img class="fs-avatar" src="./v17_files/64(3)" alt="David R."><span class="fs-ta">David R., uncle</span></div>
+          <div class="fs-ta-row"><img class="fs-avatar" src="./v18_files/64(3)" alt="David R."><span class="fs-ta">David R., uncle</span></div>
         </div>
         </div>
       </div>
@@ -1782,132 +1754,132 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
     <p class="cmp-sub">You've probably tried two or three approaches to get your child brushing properly. Here's how Sonic Brush Kids is structurally different from each.</p>
 
     <div id="cmpCarOuter" class="cc-outer">
-      <div id="cmpCarTrack" class="cc-track" style="gap: 33px; transform: translateX(-928px);">
+      <div id="cmpCarTrack" class="cc-track" style="gap: 33px; transform: translateX(-1856px);">
 
         <!-- Card 1: Manual Toothbrush -->
         <div class="cc-slide" style="width: 431px;">
           <div class="cc-card">
-            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M2 9v6M6 6v12M10 4v16M14 6v12M18 9v6"></path>
             </svg>
             <h4 class="cc-card-headline">1. Traditional Manual Toothbrush</h4>
             <p class="cc-card-body">Children aged 6-10 typically lack the motor skills to angle bristles correctly and reach every surface. Sonic Brush positions the bristles for them and covers all teeth at once.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2250CE"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </div>
         </div>
 
         <!-- Card 2: Kids' Electric -->
         <div class="cc-slide" style="width: 431px;">
           <div class="cc-card">
-            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="13" r="8"></circle><path d="M12 9v4l2.5 2.5M9 2l3 3 3-3"></path>
             </svg>
             <h4 class="cc-card-headline">2. Standard Kids' Electric Toothbrush</h4>
             <p class="cc-card-body">Electric brushes clean one area at a time and still require your child to guide the head across every tooth for 2+ minutes. Sonic Brush wraps around all teeth simultaneously.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2250CE"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </div>
         </div>
 
         <!-- Card 3: Timer Apps -->
         <div class="cc-slide" style="width: 431px;">
           <div class="cc-card">
-            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2C8.5 7 6 11 6 14.5a6 6 0 0 0 12 0C18 11 15.5 7 12 2z"></path>
             </svg>
             <h4 class="cc-card-headline">3. Brushing Apps &amp; Timers</h4>
             <p class="cc-card-body">Timers extend the brushing duration but don't change how your child reaches each tooth. Consistency of technique matters more than minutes on a clock.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2250CE"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </div>
         </div>
 
         <!-- Card 4: Character Brushes -->
         <div class="cc-slide" style="width: 431px;">
           <div class="cc-card">
-            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M8 3v6a4 4 0 0 0 8 0V3"></path><path d="M12 13v4"></path><circle cx="12" cy="19" r="2"></circle>
             </svg>
             <h4 class="cc-card-headline">4. Fun-Themed Brushes</h4>
             <p class="cc-card-body">A colorful handle makes brushing more appealing but doesn't change the bristle angle or reach back molars. The experience looks different; the cleaning limitation is the same.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2250CE"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </div>
         </div>
 
         <!-- Card 5: Parental Supervision -->
         <div class="cc-slide" style="width: 431px;">
           <div class="cc-card">
-            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2l8 3v7c0 5.5-3.5 9-8 10C7.5 21 4 17.5 4 12V5l8-3z"></path>
             </svg>
             <h4 class="cc-card-headline">5. Parental Supervision</h4>
             <p class="cc-card-body">Standing behind them correcting their grip every night works - but it turns a routine into a nightly conflict. Sonic Brush makes the technique automatic so you don't have to.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2250CE"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </div>
         </div>
 
         <!-- Card 6: They'll Learn Eventually -->
         <div class="cc-slide" style="width: 431px;">
           <div class="cc-card">
-            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="8" width="20" height="8" rx="2"></rect><path d="M6 8V5M10 8V6M14 8V5M18 8V6"></path>
             </svg>
             <h4 class="cc-card-headline">6. Skipping the Problem</h4>
             <p class="cc-card-body">Inconsistent brushing in childhood can contribute to cavities, discomfort, and dental visits. Building a consistent daily habit early matters.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2250CE"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </div>
         </div>
 
         <!-- Card 7: Generic U-Shaped -->
         <div class="cc-slide" style="width: 431px;">
           <div class="cc-card">
-            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="8" width="18" height="8" rx="2"></rect><path d="M22 12h1"></path><path d="M6 12h6"></path>
             </svg>
             <h4 class="cc-card-headline">7. Off-Brand U-Shaped Brushes</h4>
             <p class="cc-card-body">Not all U-shaped brushes use medical-grade silicone, true sonic vibration, or come with a dentist endorsement. Material quality matters for something in your child's mouth every day.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2250CE"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </div>
         </div>
 
         <!-- Card 8: Mouthwash -->
         <div class="cc-slide" style="width: 431px;">
           <div class="cc-card">
-            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
             </svg>
             <h4 class="cc-card-headline">8. Mouthwash as a Routine Substitute</h4>
             <p class="cc-card-body">Rinsing supports oral hygiene but doesn't mechanically clean tooth surfaces. It works alongside brushing, not instead of it.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2250CE"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </div>
         </div>
 
         <!-- Card 9: Dental Sealants -->
         <div class="cc-slide" style="width: 431px;">
           <div class="cc-card">
-            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2l8 3v7c0 5.5-3.8 9.7-8 11C8 21.7 4 17.5 4 12V7l8-4z"></path><polyline points="9,12 11,14 15,10"></polyline>
             </svg>
             <h4 class="cc-card-headline">9. Dental Sealants Alone</h4>
             <p class="cc-card-body">Sealants protect chewing surfaces only. They can't clean gumlines or lingual surfaces. Sonic Brush covers what sealants miss.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2250CE"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </div>
         </div>
 
         <!-- Card 10: Doing Nothing -->
         <div class="cc-slide" style="width: 431px;">
           <div class="cc-card">
-            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="cc-icon" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M8 12h8"></path>
             </svg>
             <h4 class="cc-card-headline">10. Doing Nothing</h4>
             <p class="cc-card-body">42% of kids aged 2–11 get cavities. Hope isn't a hygiene plan. Thirty seconds of Sonic Brush is.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2250CE"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </div>
         </div>
 
       </div>
     </div>
     <div class="cc-nav">
-      <div class="cc-dots" id="cmpDots"><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot on" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button></div>
+      <div class="cc-dots" id="cmpDots"><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot on" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button><button class="cc-dot" aria-label="Go to card 1"></button><button class="cc-dot" aria-label="Go to card 2"></button><button class="cc-dot" aria-label="Go to card 3"></button><button class="cc-dot" aria-label="Go to card 4"></button><button class="cc-dot" aria-label="Go to card 5"></button><button class="cc-dot" aria-label="Go to card 6"></button><button class="cc-dot" aria-label="Go to card 7"></button><button class="cc-dot" aria-label="Go to card 8"></button><button class="cc-dot" aria-label="Go to card 9"></button><button class="cc-dot" aria-label="Go to card 10"></button></div>
       <div class="cc-arrows">
         <button id="cmpPrev" class="cc-arrow" aria-label="Previous">&lt;</button>
         <button id="cmpNext" class="cc-arrow" aria-label="Next">&gt;</button>
@@ -2027,7 +1999,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
     <div class="cg-tile" style="background:url(&#39;https://images.loox.io/uploads/2020/2/26/E1pg3qkVu.jpg&#39;) center/cover no-repeat"></div>
     <div class="cg-tile" style="background:url(&#39;https://images.loox.io/uploads/2025/7/18/KP_l-f_nVT.jpg&#39;) center/cover no-repeat"></div>
     <div class="cg-tile">
-      <div style="background:#f0e8f5;width:100%;height:100%"></div>
+      <div style="background:#dbeafe;width:100%;height:100%"></div>
     </div>
 
   </div>
@@ -2041,7 +2013,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
   </div>
 
   <div id="rbCarOuter" class="rb-car-outer">
-    <div id="rbCarTrack" class="rb-car-track" style="gap: 35px; transform: translateX(-876px);">
+    <div id="rbCarTrack" class="rb-car-track" style="gap: 35px; transform: translateX(-1790px);">
 
       <div class="rb-slide" style="width: 422px;"><div class="rb-card">
         <p class="rb-label">The concern</p>
@@ -2117,7 +2089,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
   </div>
 
   <div class="rb-nav" style="margin-bottom:0">
-    <div class="rb-dots" id="rbDots"><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot on" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button></div>
+    <div class="rb-dots" id="rbDots"><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot on" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button><button class="rb-dot" aria-label="Go to card 1"></button><button class="rb-dot" aria-label="Go to card 2"></button><button class="rb-dot" aria-label="Go to card 3"></button><button class="rb-dot" aria-label="Go to card 4"></button><button class="rb-dot" aria-label="Go to card 5"></button><button class="rb-dot" aria-label="Go to card 6"></button><button class="rb-dot" aria-label="Go to card 7"></button><button class="rb-dot" aria-label="Go to card 8"></button><button class="rb-dot" aria-label="Go to card 9"></button><button class="rb-dot" aria-label="Go to card 10"></button></div>
     <div class="rb-arrows">
       <button id="rbPrev" class="rb-arrow" aria-label="Previous">&lt;</button>
       <button id="rbNext" class="rb-arrow" aria-label="Next">&gt;</button>
@@ -2126,11 +2098,11 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 
   <div class="rb-warranty-wrap">
     <div class="rb-warranty">
-      <svg width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#2250CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M12 2l8 3v7c0 5.5-3.5 9-8 10C7.5 21 4 17.5 4 12V5l8-3z"></path><polyline points="9,12 11,14 15,10"></polyline></svg>
+      <svg width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M12 2l8 3v7c0 5.5-3.5 9-8 10C7.5 21 4 17.5 4 12V5l8-3z"></path><polyline points="9,12 11,14 15,10"></polyline></svg>
       <div class="rb-warranty-divider"></div>
       <div class="rb-warranty-divider-h"></div>
       <div>
-        <div class="rb-warranty-years" style="font-size:36px;font-weight:700;line-height:1.2;color:#2250CE;margin-bottom:6px">The Sonic Brush<sup>®</sup> Promise</div>
+        <div class="rb-warranty-years" style="font-size:36px;font-weight:700;line-height:1.2;color:#0344A4;margin-bottom:6px">The Sonic Brush<sup>®</sup> Promise</div>
         <div class="rb-warranty-tag" style="font-size:17px;font-weight:400;color:#1d1d1f;font-style:italic;margin-bottom:20px">No fine print. No runaround.</div>
         <p class="rb-warranty-body" style="font-size:17px;color:#86868b;line-height:1.75;max-width:700px">Every Sonic Brush Kids is backed by our manufacturer's warranty covering defects in materials and workmanship. If something isn't right, we make it right - replacement, not runaround. Our support team is reachable by phone at +1 (985) 257-7280, by email at contact@sonic-brush.net, or through our contact form. Free shipping on every order. Hassle-free returns. We stand behind what goes into your child's mouth every day.</p>
       </div>
@@ -2204,21 +2176,21 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
       </div>
       <div>
         <div class="rvw-ugc-grid">
-          <div class="rvw-ugc-thumb" style="background:#d4e8d4"></div>
-          <div class="rvw-ugc-thumb" style="background:#f0d4c8"></div>
-          <div class="rvw-ugc-thumb" style="background:#d4d4e8"></div>
-          <div class="rvw-ugc-thumb" style="background:#e8d4d4"></div>
-          <div class="rvw-ugc-thumb" style="background:#d4e8e8"></div>
-          <div class="rvw-ugc-thumb" style="background:#e8e0d4"></div>
-          <div class="rvw-ugc-thumb" style="background:#d4e4f0"></div>
-          <div class="rvw-ugc-thumb" style="background:#f0e8d4"></div>
-          <div class="rvw-ugc-thumb" style="background:#dcd4e8"></div>
-          <div class="rvw-ugc-thumb" style="background:#e8f0d4"></div>
-          <div class="rvw-ugc-thumb" style="background:#f0d8e8"></div>
-          <div class="rvw-ugc-thumb" style="background:#d8e8f0"></div>
-          <div class="rvw-ugc-thumb" style="background:#e8f0d8"></div>
-          <div class="rvw-ugc-thumb" style="background:#f0e8d8"></div>
-          <div class="rvw-ugc-thumb" style="background:#d8d8e8"></div>
+          <div class="rvw-ugc-thumb" style="background:#dbeafe"></div>
+          <div class="rvw-ugc-thumb" style="background:#e0eeff"></div>
+          <div class="rvw-ugc-thumb" style="background:#cfe2fb"></div>
+          <div class="rvw-ugc-thumb" style="background:#dbeafe"></div>
+          <div class="rvw-ugc-thumb" style="background:#cce4fb"></div>
+          <div class="rvw-ugc-thumb" style="background:#d6e8fc"></div>
+          <div class="rvw-ugc-thumb" style="background:#d4e8fc"></div>
+          <div class="rvw-ugc-thumb" style="background:#e0eeff"></div>
+          <div class="rvw-ugc-thumb" style="background:#cfd9f5"></div>
+          <div class="rvw-ugc-thumb" style="background:#d8eeff"></div>
+          <div class="rvw-ugc-thumb" style="background:#dbeafe"></div>
+          <div class="rvw-ugc-thumb" style="background:#cfe8fb"></div>
+          <div class="rvw-ugc-thumb" style="background:#d8eeff"></div>
+          <div class="rvw-ugc-thumb" style="background:#e0eeff"></div>
+          <div class="rvw-ugc-thumb" style="background:#cfd9f5"></div>
         </div>
       </div>
     </div>
@@ -2238,9 +2210,9 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
     <div class="rvw-masonry">
 
       <div class="rvw-m-card">
-        <div class="rvw-m-photo" style="height:195px;background:#d4e8d4"></div>
+        <div class="rvw-m-photo" style="height:195px;background:#dbeafe"></div>
         <div class="rvw-m-body">
-          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v17_files/64(4)" alt="Emma M.">Emma M. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v18_files/64(4)" alt="Emma M.">Emma M. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div class="rvw-m-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="rvw-m-text">We tried everything before this. My daughter would scream every single night. Within a week of Sonic Brush she was <span class="rvw-hl">asking to brush before bed</span>. The bite-and-press motion makes it feel like a game.</p>
         </div>
@@ -2248,16 +2220,16 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 
       <div class="rvw-m-card">
         <div class="rvw-m-body">
-          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v17_files/64(5)" alt="James L.">James L. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v18_files/64(5)" alt="James L.">James L. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div class="rvw-m-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="rvw-m-text">Our dentist commented at Leo's last check-up that his <span class="rvw-hl">back teeth looked much cleaner than before</span>. He just bites down. No flailing, no screaming.</p>
         </div>
       </div>
 
       <div class="rvw-m-card">
-        <div class="rvw-m-photo" style="height:140px;background:#e8d4f0"></div>
+        <div class="rvw-m-photo" style="height:140px;background:#dbeafe"></div>
         <div class="rvw-m-body">
-          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v17_files/64(6)" alt="Sasha R.">Sasha R. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v18_files/64(6)" alt="Sasha R.">Sasha R. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div class="rvw-m-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s tp-empty">★</span></div>
           <p class="rvw-m-text">Our son has sensory sensitivities and has always hated things in his mouth. The gentle vibration was something he <span class="rvw-hl">actually liked rather than tolerated</span>.</p>
         </div>
@@ -2265,16 +2237,16 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 
       <div class="rvw-m-card">
         <div class="rvw-m-body">
-          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v17_files/64(7)" alt="Niamh C.">Niamh C. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v18_files/64(7)" alt="Niamh C.">Niamh C. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div class="rvw-m-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="rvw-m-text">She used to brush for 15 seconds and declare herself done. Now <span class="rvw-hl">she checks the timer herself</span>. I don't need to supervise anymore.</p>
         </div>
       </div>
 
       <div class="rvw-m-card">
-        <div class="rvw-m-photo" style="height:210px;background:#d4f0e0"></div>
+        <div class="rvw-m-photo" style="height:210px;background:#cce4fb"></div>
         <div class="rvw-m-body">
-          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v17_files/64(8)" alt="Rachel T.">Rachel T. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v18_files/64(8)" alt="Rachel T.">Rachel T. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div class="rvw-m-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="rvw-m-text">Best purchase of the year. My 5-year-old <span class="rvw-hl">asks to brush without being told</span>. That has literally never happened before in this household.</p>
         </div>
@@ -2282,16 +2254,16 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 
       <div class="rvw-m-card">
         <div class="rvw-m-body">
-          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v17_files/64(9)" alt="Mike P.">Mike P. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v18_files/64(9)" alt="Mike P.">Mike P. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div class="rvw-m-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="rvw-m-text">Bedtime was a battle every single night. Now there is <span class="rvw-hl">zero resistance</span>. My son actually enjoys it. Two months in and we haven't missed a session.</p>
         </div>
       </div>
 
       <div class="rvw-m-card">
-        <div class="rvw-m-photo" style="height:160px;background:#f0e8d4"></div>
+        <div class="rvw-m-photo" style="height:160px;background:#e0eeff"></div>
         <div class="rvw-m-body">
-          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v17_files/64(10)" alt="Aisha K.">Aisha K. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v18_files/64(10)" alt="Aisha K.">Aisha K. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div class="rvw-m-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="rvw-m-text">This should be <span class="rvw-hl">standard in every home with young children</span>. Simple to use, the kids love the buzz, and it actually cleans properly.</p>
         </div>
@@ -2299,16 +2271,16 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 
       <div class="rvw-m-card">
         <div class="rvw-m-body">
-          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v17_files/64(11)" alt="Tom B.">Tom B. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v18_files/64(11)" alt="Tom B.">Tom B. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div class="rvw-m-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="rvw-m-text">At our last appointment our <span class="rvw-hl">dentist asked what had changed</span>. We told her. She said she wished more parents knew about this product.</p>
         </div>
       </div>
 
       <div class="rvw-m-card">
-        <div class="rvw-m-photo" style="height:180px;background:#d4d4f0"></div>
+        <div class="rvw-m-photo" style="height:180px;background:#cfd9f5"></div>
         <div class="rvw-m-body">
-          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v17_files/64(12)" alt="Laura F.">Laura F. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v18_files/64(12)" alt="Laura F.">Laura F. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div class="rvw-m-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s tp-empty">★</span></div>
           <p class="rvw-m-text">My daughter <span class="rvw-hl">looks forward to brushing</span> now. She shows her little brother how to do it. That alone made this worth buying twice over.</p>
         </div>
@@ -2316,7 +2288,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 
       <div class="rvw-m-card">
         <div class="rvw-m-body">
-          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v17_files/64(13)" alt="Chris M.">Chris M. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div class="rvw-m-reviewer"><img class="rvw-m-avatar" src="./v18_files/64(13)" alt="Chris M.">Chris M. <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0344A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div class="rvw-m-stars"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
           <p class="rvw-m-text">Simple. Effective. <span class="rvw-hl">Worth every penny</span>. Bought three — one for each kid. No more chasing, no more arguments. Done.</p>
         </div>
@@ -2484,8 +2456,8 @@ const activeObs = new IntersectionObserver((entries) => {
 sectionIds.forEach(id => { const el = document.getElementById(id); if (el) activeObs.observe(el); });
 
 /* ── IMAGE CAROUSEL ──────────────────────────────────── */
-let carCur = 4;
-const CAR_N = 10;
+let carCur = 0;
+const CAR_N = 7;
 let carPlaying = false;
 let carTimer = null;
 
@@ -2517,11 +2489,6 @@ function carGo(n, instant) {
   }
   document.querySelectorAll('.car-dot').forEach((el, i) => el.classList.toggle('on', i === carCur));
   document.querySelectorAll('.car-thumb').forEach((el, i) => el.classList.toggle('on', i === carCur));
-  // sync colour swatches: highlight when on a colour slide (0-3), clear otherwise
-  document.querySelectorAll('.bp-color, .drawer-color').forEach(function(el, i) {
-    var idx = parseInt(el.getAttribute('data-color-idx') || i);
-    el.classList.toggle('selected', carCur <= 3 && idx === carCur);
-  });
   if (carPlaying && carCur < CAR_N - 1) carTimer = setTimeout(() => carGo(carCur + 1), 4500);
 }
 
@@ -2879,12 +2846,42 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration>
 
 <script>
-function bpSelectSize(el){document.querySelectorAll('.bp-size').forEach(function(b){b.classList.remove('selected')});el.classList.add('selected');}
+var variantImages = {
+  '6-7': {
+    '0': 'https://lh3.googleusercontent.com/d/13i7vP4-iVFkUhMNFElfPrieFTGGc1XMa',
+    '1': 'https://lh3.googleusercontent.com/d/1hpDmsf4XEr6EzhEl5TA49mqBRVSQsgqC',
+    '2': 'https://lh3.googleusercontent.com/d/15evZ3n53orur4JuD0JXM1oTm-oWqLqTB',
+    '3': 'https://lh3.googleusercontent.com/d/1RlRxhT61euHi0XUPbzla-lSh4SyGTxcR'
+  },
+  '8-15': {
+    '0': 'https://lh3.googleusercontent.com/d/10X9RvP5bylhJdFqj0iN_OC8VzJrcYZ5p',
+    '1': 'https://lh3.googleusercontent.com/d/1jiVnLnpF-XZKxtd4PWxHI9em0QH6ZP76',
+    '2': 'https://lh3.googleusercontent.com/d/1jiVnLnpF-XZKxtd4PWxHI9em0QH6ZP76',
+    '3': 'https://lh3.googleusercontent.com/d/1peoazZK3uFXD0smUmkWgVyeaXiclIzWe'
+  }
+};
+var selectedSize = '6-7';
+var selectedColorIdx = '0';
+function updateVariantImage() {
+  var url = (variantImages[selectedSize] || {})[selectedColorIdx];
+  if (!url) return;
+  var slide = document.getElementById('carVariantSlide');
+  var thumb = document.getElementById('carVariantThumb');
+  if (slide) slide.style.background = "url('" + url + "') center/cover no-repeat";
+  if (thumb) thumb.style.backgroundImage = "url('" + url + "')";
+  carGo(0);
+}
+function bpSelectSize(el){
+  document.querySelectorAll('.bp-size').forEach(function(b){b.classList.remove('selected')});
+  el.classList.add('selected');
+  selectedSize = el.getAttribute('data-size') || selectedSize;
+  updateVariantImage();
+}
 function bpSelectColor(el){
   document.querySelectorAll('.bp-color').forEach(function(b){b.classList.remove('selected')});
   el.classList.add('selected');
-  var idx=parseInt(el.getAttribute('data-color-idx'));
-  if(!isNaN(idx)){carGo(idx);}
+  selectedColorIdx = el.getAttribute('data-color-idx') || '0';
+  updateVariantImage();
 }
 function bpChangeQty(d){var el=document.getElementById('bpQty');var v=parseInt(el.textContent)+d;if(v<1)v=1;el.textContent=v;}
 </script>
