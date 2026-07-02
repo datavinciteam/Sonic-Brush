@@ -504,9 +504,13 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .spiel-wave{position:absolute;bottom:-2px;left:0;width:100%;overflow:hidden;line-height:0;z-index:1;pointer-events:none}
 .spiel-wave svg{display:block;width:100%;height:90px}
 /* Comparison section */
-.cmp-section{padding:200px 0 160px;background:linear-gradient(rgba(0,0,0,0.52),rgba(0,0,0,0.52)),url('https://lh3.googleusercontent.com/d/1vm-VGaY2PmbHSHGMKoWnJm1QN26DNOTN') center/cover no-repeat;position:relative}
-.cmp-section::before{content:'';position:absolute;top:0;left:0;right:0;height:180px;background:linear-gradient(to bottom,#fff,transparent);pointer-events:none;z-index:1}
-.cmp-section::after{content:'';position:absolute;bottom:0;left:0;right:0;height:220px;background:linear-gradient(to bottom,transparent,#fff);pointer-events:none;z-index:1}
+.cmp-section{padding:80px 0 80px;background:#dbeafe;position:relative}
+.cmp-section::before,.cmp-section::after{display:none}
+.cmp-wave{position:absolute;left:0;right:0;width:100%;overflow:hidden;line-height:0;pointer-events:none;z-index:1}
+.cmp-wave-top{top:-1px}
+.cmp-wave-bottom{bottom:-1px}
+.cmp-wave svg{display:block;width:100%;height:56px}
+.cmp-inner{position:relative;z-index:2}
 .cmp-inner{max-width:1440px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
 /* Doctor + FAQ section */
 .docfaq-section{background:#fff;padding:80px 0 120px}
@@ -574,19 +578,22 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .rb-arrow{width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.4);background:rgba(255,255,255,0.15);cursor:pointer;font-size:15px;color:#fff;line-height:1;transition:background .15s,border-color .15s;font-family:var(--font)}
 .rb-arrow:hover{background:rgba(255,255,255,0.25);border-color:rgba(255,255,255,0.6)}
 @media(max-width:768px){.rb-headline{font-size:40px}}
-.cmp-eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#fff;margin-bottom:20px;padding:6px 16px;border-radius:999px;background:rgba(255,255,255,0.15);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.28);box-shadow:0 2px 12px rgba(0,0,0,0.15)}
-.cmp-headline{font-size:64px;font-weight:600;letter-spacing:-.03em;line-height:1.35;color:#fff;margin-bottom:24px;text-align:left}
-.cmp-headline em{font-style:italic;font-weight:400;color:#90aaee}
-.cmp-sub{font-size:18px;line-height:1.65;color:rgba(255,255,255,0.82);max-width:580px;margin-bottom:64px}
+.cmp-eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#1e3a8a;margin-bottom:20px;padding:6px 16px;border-radius:999px;background:rgba(30,58,138,0.1);border:1px solid rgba(30,58,138,0.2);box-shadow:none}
+.cmp-headline{font-size:64px;font-weight:600;letter-spacing:-.03em;line-height:1.35;color:#1e3a8a;margin-bottom:24px;text-align:left}
+.cmp-headline em{font-style:italic;font-weight:400;color:#0344A4}
+.cmp-sub{font-size:18px;line-height:1.65;color:#1e40af;max-width:580px;margin-bottom:64px}
 .cc-outer{overflow:hidden;position:relative;cursor:grab;user-select:none}
 .cc-outer:active{cursor:grabbing}
 .cc-track{display:flex;transition:transform .45s cubic-bezier(.4,0,.2,1);will-change:transform}
 .cc-slide{flex-shrink:0}
-.cc-card{background:#fff;border-radius:24px;padding:32px 28px 72px;box-shadow:none;position:relative;aspect-ratio:auto;overflow-y:auto;display:flex;flex-direction:column;height:440px}
+.cc-card{background:#fff;border-radius:24px;padding:32px 28px 28px;box-shadow:none;position:relative;aspect-ratio:auto;overflow-y:auto;display:flex;flex-direction:column;height:440px}
 .cc-icon{width:48px;height:48px;flex-shrink:0;margin-bottom:32px;display:block}
 .cc-card-headline{font-size:22px;font-weight:600;letter-spacing:-.02em;color:#1d1d1f;margin-bottom:14px;line-height:1.2;flex-shrink:0}
 .cc-card-body{font-size:17px;line-height:1.65;color:#3a3a3c;flex:1}
-.cc-tick{position:absolute;bottom:28px;right:28px;width:32px;height:32px}
+.cc-winner{display:flex;align-items:center;gap:10px;padding-top:14px;border-top:1px solid rgba(3,68,164,0.1);margin-top:14px;flex-shrink:0}
+.cc-tick{width:28px;height:28px;flex-shrink:0}
+.cc-winner-label{font-size:13px;font-weight:700;color:#0344A4;display:block;line-height:1.2}
+.cc-winner-criteria{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#6b7280;display:block;margin-top:2px}
 .cc-nav{display:flex;align-items:center;gap:12px;margin-top:24px}
 .cc-dots{display:none}
 .cc-dot{width:6px;height:6px;border-radius:50%;background:rgba(0,0,0,0.15);transition:background .2s,width .2s;cursor:pointer;border:none;padding:0;flex-shrink:0}
@@ -1251,12 +1258,12 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .cc-outer{overflow:hidden;position:relative;cursor:grab;user-select:none;margin-right:calc(min(50vw,720px) - 50vw - 24px)}
 .cc-arrow:hover:not(:disabled){background:#f5f5f7;border-color:rgba(0,0,0,0.3)}
 .cc-arrow:disabled{opacity:0.3;cursor:default}
-.cc-card{aspect-ratio:auto;padding:28px 24px 72px;height:420px;overflow-y:auto;display:flex;flex-direction:column}
+.cc-card{aspect-ratio:auto;padding:28px 24px 24px;height:420px;overflow-y:auto;display:flex;flex-direction:column}
 .cc-card-body{font-size:15px;flex:1}
 .cc-icon{width:38px;height:38px;margin-bottom:20px}
-.cc-tick{width:26px;height:26px;bottom:20px;right:20px}
-@media(max-width:768px){.cmp-headline{font-size:40px}.cc-card{aspect-ratio:auto;padding:28px 24px 72px;height:420px;overflow-y:auto;display:flex;flex-direction:column}.cc-card-headline{font-size:19px}.cc-card-body{font-size:15px;flex:1}.cc-icon{width:38px;height:38px;margin-bottom:20px}.cc-tick{width:26px;height:26px;bottom:20px;right:20px}}
-@media(max-width:480px){.cmp-headline{font-size:26px}.cmp-sub{font-size:15px}.cc-card{padding:22px 18px 64px;height:400px}.cc-card-headline{font-size:17px}.cc-card-body{font-size:15px}.cc-icon{width:32px;height:32px;margin-bottom:16px}.cc-tick{width:22px;height:22px;bottom:16px;right:16px}}
+.cc-tick{width:24px;height:24px}
+@media(max-width:768px){.cmp-headline{font-size:40px}.cc-card{aspect-ratio:auto;padding:28px 24px 24px;height:420px;overflow-y:auto;display:flex;flex-direction:column}.cc-card-headline{font-size:19px}.cc-card-body{font-size:15px;flex:1}.cc-icon{width:38px;height:38px;margin-bottom:20px}.cc-tick{width:24px;height:24px}}
+@media(max-width:480px){.cmp-headline{font-size:26px}.cmp-sub{font-size:15px}.cc-card{padding:22px 18px 22px;height:400px}.cc-card-headline{font-size:17px}.cc-card-body{font-size:15px}.cc-icon{width:32px;height:32px;margin-bottom:16px}.cc-tick{width:22px;height:22px}}
 
 /* ── Concern Cards (scrollable) ──────────────────────────── */
 @media(max-width:768px){.rb-slide{aspect-ratio:auto}.rb-card{padding:24px 22px;height:380px;overflow-y:auto;display:flex;flex-direction:column}.rb-objection{font-size:15px;margin-bottom:16px}.rb-rebuttal{font-size:15px;flex:1}}
@@ -1852,6 +1859,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 
 <!-- ═══ COMPARISON ═════════════════════════════════════════ -->
 <section class="cmp-section">
+  <div class="cmp-wave cmp-wave-top"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,28 C240,56 480,0 720,28 C960,56 1200,0 1440,28 L1440,0 L0,0 Z" fill="#fff"/></svg></div>
   <div class="cmp-inner">
     <p class="cmp-eyebrow">Honest comparison</p>
     <h2 class="cmp-headline">What makes this different from<br><em>what's already in your bathroom.</em></h2>
@@ -1868,7 +1876,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             </svg>
             <h4 class="cc-card-headline">1. Traditional Manual Toothbrush</h4>
             <p class="cc-card-body">Children aged 6-10 typically lack the motor skills to angle bristles correctly and reach every surface. Sonic Brush positions the bristles for them and covers all teeth at once.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div class="cc-winner"><svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div><span class="cc-winner-label">Winner: Sonic Brush Kids</span><span class="cc-winner-criteria">Coverage</span></div></div>
           </div>
         </div>
 
@@ -1880,7 +1888,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             </svg>
             <h4 class="cc-card-headline">2. Standard Kids' Electric Toothbrush</h4>
             <p class="cc-card-body">Electric brushes clean one area at a time and still require your child to guide the head across every tooth for 2+ minutes. Sonic Brush wraps around all teeth simultaneously.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div class="cc-winner"><svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div><span class="cc-winner-label">Winner: Sonic Brush Kids</span><span class="cc-winner-criteria">Speed</span></div></div>
           </div>
         </div>
 
@@ -1892,7 +1900,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             </svg>
             <h4 class="cc-card-headline">3. Brushing Apps &amp; Timers</h4>
             <p class="cc-card-body">Timers extend the brushing duration but don't change how your child reaches each tooth. Consistency of technique matters more than minutes on a clock.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div class="cc-winner"><svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div><span class="cc-winner-label">Winner: Sonic Brush Kids</span><span class="cc-winner-criteria">Technique</span></div></div>
           </div>
         </div>
 
@@ -1904,7 +1912,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             </svg>
             <h4 class="cc-card-headline">4. Fun-Themed Brushes</h4>
             <p class="cc-card-body">A colorful handle makes brushing more appealing but doesn't change the bristle angle or reach back molars. The experience looks different; the cleaning limitation is the same.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div class="cc-winner"><svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div><span class="cc-winner-label">Winner: Sonic Brush Kids</span><span class="cc-winner-criteria">Effectiveness</span></div></div>
           </div>
         </div>
 
@@ -1916,7 +1924,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             </svg>
             <h4 class="cc-card-headline">5. Parental Supervision</h4>
             <p class="cc-card-body">Standing behind them correcting their grip every night works - but it turns a routine into a nightly conflict. Sonic Brush makes the technique automatic so you don't have to.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div class="cc-winner"><svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div><span class="cc-winner-label">Winner: Sonic Brush Kids</span><span class="cc-winner-criteria">Independence</span></div></div>
           </div>
         </div>
 
@@ -1928,7 +1936,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             </svg>
             <h4 class="cc-card-headline">6. Skipping the Problem</h4>
             <p class="cc-card-body">Inconsistent brushing in childhood can contribute to cavities, discomfort, and dental visits. Building a consistent daily habit early matters.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div class="cc-winner"><svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div><span class="cc-winner-label">Winner: Sonic Brush Kids</span><span class="cc-winner-criteria">Prevention</span></div></div>
           </div>
         </div>
 
@@ -1940,7 +1948,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             </svg>
             <h4 class="cc-card-headline">7. Off-Brand U-Shaped Brushes</h4>
             <p class="cc-card-body">Not all U-shaped brushes use medical-grade silicone, true sonic vibration, or come with a dentist endorsement. Material quality matters for something in your child's mouth every day.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div class="cc-winner"><svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div><span class="cc-winner-label">Winner: Sonic Brush Kids</span><span class="cc-winner-criteria">Safety</span></div></div>
           </div>
         </div>
 
@@ -1952,7 +1960,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             </svg>
             <h4 class="cc-card-headline">8. Mouthwash as a Routine Substitute</h4>
             <p class="cc-card-body">Rinsing supports oral hygiene but doesn't mechanically clean tooth surfaces. It works alongside brushing, not instead of it.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div class="cc-winner"><svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div><span class="cc-winner-label">Winner: Sonic Brush Kids</span><span class="cc-winner-criteria">Cleaning</span></div></div>
           </div>
         </div>
 
@@ -1964,7 +1972,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             </svg>
             <h4 class="cc-card-headline">9. Dental Sealants Alone</h4>
             <p class="cc-card-body">Sealants protect chewing surfaces only. They can't clean gumlines or lingual surfaces. Sonic Brush covers what sealants miss.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div class="cc-winner"><svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div><span class="cc-winner-label">Winner: Sonic Brush Kids</span><span class="cc-winner-criteria">Reach</span></div></div>
           </div>
         </div>
 
@@ -1976,7 +1984,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
             </svg>
             <h4 class="cc-card-headline">10. Doing Nothing</h4>
             <p class="cc-card-body">42% of kids aged 2–11 get cavities. Hope isn't a hygiene plan. Thirty seconds of Sonic Brush is.</p>
-            <svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div class="cc-winner"><svg class="cc-tick" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0344A4"></circle><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div><span class="cc-winner-label">Winner: Sonic Brush Kids</span><span class="cc-winner-criteria">Reliability</span></div></div>
           </div>
         </div>
 
@@ -1990,6 +1998,7 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
       </div>
     </div>
   </div>
+  <div class="cmp-wave cmp-wave-bottom"><svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,28 C240,0 480,56 720,28 C960,0 1200,56 1440,28 L1440,56 L0,56 Z" fill="#fff"/></svg></div>
 </section>
 
 <!-- ═══ DOCTOR + FAQ ══════════════════════════════════════ -->
