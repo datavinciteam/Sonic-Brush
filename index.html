@@ -571,6 +571,34 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .rb-warranty-headline{font-size:24px;font-weight:600;color:#1d1d1f;letter-spacing:-.02em;margin-bottom:10px;line-height:1.2}
 .rb-warranty-body{font-size:16px;line-height:1.65;color:#86868b}
 .rb-warranty-shield{flex-shrink:0;opacity:.15}
+.rb-trust-bar{max-width:1120px;margin:48px auto 0;padding:0 24px}
+.rb-trust-inner{background:#fff;border-radius:20px;padding:32px 40px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;box-shadow:0 8px 32px rgba(0,0,0,0.08)}
+.rb-trust-item{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.rb-trust-divider{width:1px;height:48px;background:rgba(0,0,0,0.1);flex-shrink:0}
+.tp-stars-row{display:flex;gap:3px;margin-bottom:3px}
+.tp-star{width:20px;height:20px;background:#00b67a;display:inline-flex;align-items:center;justify-content:center;border-radius:2px}
+.tp-star svg{width:13px;height:13px;fill:#fff}
+.rb-tp-label{font-size:13px;font-weight:700;color:#1d1d1f;line-height:1.2}
+.rb-tp-sub{font-size:11px;color:#6b7280;margin-top:1px}
+.rb-secure-icon{width:36px;height:36px;background:#f0fdf4;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rb-secure-icon svg{width:18px;height:18px;stroke:#16a34a;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.rb-secure-label{font-size:13px;font-weight:700;color:#1d1d1f;line-height:1.2}
+.rb-secure-sub{font-size:11px;color:#6b7280;margin-top:1px}
+.rb-trust-item{flex-shrink:0}
+.rb-media-wrap{display:flex;flex-direction:column;gap:8px;flex:1}
+.rb-media-label{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9ca3af}
+.rb-media-logos{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.rb-media-logos img{height:44px;width:auto;object-fit:contain;opacity:1;filter:none}
+@media(max-width:768px){
+  .rb-trust-bar{padding:0 16px}
+  .rb-trust-inner{flex-direction:column;align-items:center;text-align:center;padding:24px 20px;gap:0}
+  .rb-trust-divider{display:block;width:100%;height:1px;background:rgba(0,0,0,0.08);margin:16px 0;flex-shrink:0}
+  .rb-trust-item{justify-content:center;width:100%}
+  .rb-trust-item > span{flex-direction:column!important;align-items:center!important;gap:6px!important}
+  .rb-media-wrap{width:100%;align-items:center}
+  .rb-media-logos{gap:14px;flex-wrap:wrap;justify-content:center}
+  .rb-media-logos img{height:32px}
+}
 .rb-dots{display:none}
 .rb-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background .2s,width .2s;cursor:pointer;border:none;padding:0;flex-shrink:0}
 .rb-dot.on{background:#fff;width:18px;border-radius:3px}
@@ -615,12 +643,19 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .fs-text:nth-child(odd) .fs-mob-img{order:2}
 .fs-text:nth-child(even) .fs-mob-img{order:0}
 .fs-img-wrap{flex:0 0 52%;display:flex;flex-direction:column;gap:10px}
+.wif-gallery{flex:0 0 48%;display:flex;gap:10px;align-items:flex-start;order:0}
+.fs-text:nth-child(even) .wif-gallery{order:0}
+.fs-text:nth-child(odd) .wif-gallery{order:2}
+.wif-portrait{flex:0 0 58%;border-radius:14px;overflow:hidden;aspect-ratio:4/5}
+.wif-portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.wif-squares{flex:1;display:flex;flex-direction:column;gap:10px}
+.wif-squares img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:14px}
 .fs-img-wrap .fs-mob-img{flex:none;width:100%;order:0!important}
 .fs-text:nth-child(odd) .fs-img-wrap{order:2}
 .fs-text:nth-child(even) .fs-img-wrap{order:0}
 .fs-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:10px;order:1}
 .fs-thumb{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
-.fs-text[data-i="1"]{flex-direction:column;align-items:stretch}
+.fs-text[data-i="0"]{flex-direction:column;align-items:stretch}
 .fs-text[data-i="3"]{display:block;padding:48px 0}
 .kit-card{background:#0344A4;border-radius:24px;overflow:hidden;display:flex;align-items:stretch;width:100%;box-shadow:0 8px 32px rgba(3,68,164,0.28)}
 .kit-card-img{flex:0 0 40%;display:flex;align-items:center;justify-content:center;padding:32px 24px}
@@ -641,9 +676,28 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .kit-card-body .fs-cta-badge{background:rgba(255,255,255,0.15);color:#fff}
 .kit-card-body .fs-cta-row{flex-wrap:wrap}
 @media(max-width:768px){.kit-card{flex-direction:column}.kit-card-img{flex:none;padding:24px 32px}.kit-card-body{padding:28px 24px}}
-.fs-text[data-i="1"] .fs-text-body{flex:none;width:100%;text-align:center}
-.fs-text[data-i="1"] .fs-heading{text-align:center}
-.fs-text[data-i="1"] .fs-testimonial{text-align:left;width:50%;margin:0 auto}
+.fs-text[data-i="0"] .fs-text-body{flex:none;width:100%;text-align:center}
+.fs-text[data-i="0"] .fs-heading{text-align:center}
+.fs-text[data-i="0"] .fs-testimonial{text-align:left;width:50%;margin:0 auto}
+.how-steps{display:flex;align-items:flex-start;justify-content:center;margin:28px 0 32px}
+.how-step{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 12px}
+.how-step-icon{width:60px;height:60px;border-radius:50%;background:#dbeafe;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;flex-shrink:0}
+.how-step-icon svg{width:28px;height:28px;stroke:#0344A4;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.how-step-num{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#0344A4;margin-bottom:5px}
+.how-step-title{font-size:15px;font-weight:700;color:#1d1d1f;margin-bottom:5px;line-height:1.3}
+.how-step-desc{font-size:13px;line-height:1.5;color:#6b7280}
+.how-arrow{display:flex;align-items:center;padding-top:30px;flex-shrink:0;color:#93c5fd}
+.how-arrow svg{width:22px;height:22px}
+@media(max-width:600px){
+  .how-steps{flex-direction:column;gap:0;margin:20px 0 24px}
+  .how-step{flex:none;width:100%;display:grid;grid-template-columns:52px 1fr;grid-template-rows:auto auto auto;column-gap:14px;row-gap:2px;padding:12px 0;text-align:left}
+  .how-step-icon{grid-column:1;grid-row:1/4;width:52px;height:52px;margin:0;align-self:center}
+  .how-step-num{grid-column:2;grid-row:1}
+  .how-step-title{grid-column:2;grid-row:2}
+  .how-step-desc{grid-column:2;grid-row:3}
+  .how-arrow{padding:0;justify-content:flex-start;padding-left:66px}
+  .how-arrow svg{width:18px;height:18px;transform:rotate(90deg)}
+}
 .iac-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
 .iac-card{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5}
 .iac-img{width:100%;height:100%;object-fit:cover;display:block}
@@ -693,10 +747,14 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
   .fs-img-wrap .fs-mob-img{width:100%;margin-left:0;margin-right:0;border-radius:0}
   .fs-thumbs{padding:0 20px}
   .fs-thumb{border-radius:10px}
+  .wif-gallery{flex:none;width:100%;order:0!important;margin-bottom:8px;flex-direction:row}
+  .wif-portrait{flex:0 0 58%;min-height:0;border-radius:12px}
+  .wif-squares{flex:1;flex-direction:column}
+  .wif-squares img{aspect-ratio:1/1;width:100%;flex:none}
   .iac-grid{grid-template-columns:repeat(3,72vw);overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;gap:12px;padding-bottom:6px;margin-left:-20px;margin-right:-20px;padding-left:20px}
   .iac-card{scroll-snap-align:start;border-radius:14px}
   .iac-caption{font-size:14px}
-  .fs-text[data-i="1"] .fs-testimonial{width:100%;margin:0}
+  .fs-text[data-i="0"] .fs-testimonial{width:100%;margin:0}
   .fs-heading{font-size:32px}
 }
 /* Spiel section headline */
@@ -1722,11 +1780,60 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
     <!-- Left: text panels (all same position, transition on scroll) -->
     <div class="fs-left">
       <div class="fs-text fs-on" data-i="0">
-        <div class="fs-img-wrap">
-          <div class="fs-mob-img" style="background:url(&#39;https://lh3.googleusercontent.com/d/1x8UDKNskUmD6t7rTJXA6W9_ux8iFLhte&#39;) center/cover no-repeat" aria-label="Sonic cleaning"></div>
-          <div class="fs-thumbs">
-            <img src="https://images.loox.io/uploads/2021/8/29/EJrebwEZi.jpg" class="fs-thumb" alt="">
-            <img src="https://images.loox.io/uploads/2025/6/13/dbrj5LcJP.jpg" class="fs-thumb" alt="">
+        <div class="fs-text-body">
+          <span class="fs-eyebrow">See it in action</span>
+          <h3 class="fs-heading">They bite down. They press the button.<br><em>You move on with your evening.</em></h3>
+          <div class="how-steps">
+            <div class="how-step">
+              <div class="how-step-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
+              <div class="how-step-num">Step 1</div>
+              <div class="how-step-title">Bite Down</div>
+              <div class="how-step-desc">Slip the U-shaped silicone head over their teeth</div>
+            </div>
+            <div class="how-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+            <div class="how-step">
+              <div class="how-step-icon"><svg viewBox="0 0 24 24"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"/><line x1="12" y1="2" x2="12" y2="12"/></svg></div>
+              <div class="how-step-num">Step 2</div>
+              <div class="how-step-title">Press the Button</div>
+              <div class="how-step-desc">31,000 sonic strokes per minute start instantly</div>
+            </div>
+            <div class="how-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+            <div class="how-step">
+              <div class="how-step-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+              <div class="how-step-num">Step 3</div>
+              <div class="how-step-title">Done in 30 Seconds</div>
+              <div class="how-step-desc">Every surface clean. No guiding, no nagging.</div>
+            </div>
+          </div>
+          <div class="iac-grid">
+            <div class="iac-card">
+              <img src="https://images.loox.io/uploads/2020/2/26/E1pg3qkVu.jpg" class="iac-img" alt="BASS brushing">
+              <div class="iac-caption">BASS brushing technique delivered automatically, every single time</div>
+            </div>
+            <div class="iac-card">
+              <img src="https://lh3.googleusercontent.com/d/1YlJCnLAwzKtT1o3Z7cxG-v8V1JnXz6YA" class="iac-img" alt="360 cleaning">
+              <div class="iac-caption">360° simultaneous cleaning — no surface left untouched</div>
+            </div>
+            <div class="iac-card">
+              <img src="https://images.loox.io/uploads/2025/7/18/KP_l-f_nVT.jpg" class="iac-img" alt="30 seconds">
+              <div class="iac-caption">30 seconds replaces 2–3 minutes of inconsistent manual effort</div>
+            </div>
+          </div>
+          <div class="fs-testimonial">
+            <p class="fs-tq">"My son was done before I finished flossing my own teeth. I stood there in disbelief."</p>
+            <div class="fs-ta-row"><img class="fs-avatar" src="https://i.pravatar.cc/64?img=7" alt="Mark T."><span class="fs-ta">Mark T., father of two</span></div>
+            <div class="fs-stars" style="margin-top:12px"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="fs-text" data-i="1">
+        <div class="wif-gallery">
+          <div class="wif-portrait">
+            <img src="https://lh3.googleusercontent.com/d/1KEQFHxDfUmUtUn3dou1dOkWApPEy5pH7" alt="Soft silicone brushing">
+          </div>
+          <div class="wif-squares">
+            <img src="https://images.loox.io/uploads/2021/8/29/EJrebwEZi.jpg" alt="">
+            <img src="https://images.loox.io/uploads/2025/6/13/dbrj5LcJP.jpg" alt="">
           </div>
         </div>
         <div class="fs-text-body">
@@ -1767,49 +1874,23 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
         </div>
         </div>
       </div>
-      <div class="fs-text" data-i="1">
-        <div class="fs-text-body">
-          <span class="fs-eyebrow">See it in action</span>
-          <h3 class="fs-heading">They bite down. They press the button.<br><em>You move on with your evening.</em></h3>
-          <div class="iac-grid">
-            <div class="iac-card">
-              <img src="https://images.loox.io/uploads/2020/2/26/E1pg3qkVu.jpg" class="iac-img" alt="BASS brushing">
-              <div class="iac-caption">BASS brushing technique delivered automatically, every single time</div>
-            </div>
-            <div class="iac-card">
-              <img src="https://images.loox.io/uploads/2025/7/18/Twcw30imDB.jpg" class="iac-img" alt="360 cleaning">
-              <div class="iac-caption">360° simultaneous cleaning — no surface left untouched</div>
-            </div>
-            <div class="iac-card">
-              <img src="https://images.loox.io/uploads/2025/7/18/KP_l-f_nVT.jpg" class="iac-img" alt="30 seconds">
-              <div class="iac-caption">30 seconds replaces 2–3 minutes of inconsistent manual effort</div>
-            </div>
-          </div>
-          <div class="fs-testimonial">
-            <p class="fs-tq">"My son was done before I finished flossing my own teeth. I stood there in disbelief."</p>
-            <div class="fs-ta-row"><img class="fs-avatar" src="https://i.pravatar.cc/64?img=7" alt="Mark T."><span class="fs-ta">Mark T., father of two</span></div>
-            <div class="fs-stars" style="margin-top:12px"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
-          </div>
-        </div>
-      </div>
       <div class="fs-text" data-i="2">
         <div class="fs-mob-img" style="background:url(&#39;https://images.loox.io/uploads/2025/7/18/ygh_h0wCLz.jpg&#39;) center/cover no-repeat" aria-label="Dental results"></div>
         <div class="fs-text-body">
-        <span class="fs-eyebrow">What actually changes at home</span>
-        <h3 class="fs-heading">The brushing fight doesn't end gradually.<br><em>It ends tonight.</em></h3>
-        <p class="fs-body">Night One - It's new. It buzzes. They want to try it. <span class="spiel-hl">Thirty seconds later - done. No negotiation.</span> Night Two - They pick it up themselves. Maybe before you even ask. Night Three - It's just part of bedtime now. The argument is gone. <span class="spiel-hl">It's just... gone.</span></p>
+        <span class="fs-eyebrow">Why parents love it</span>
+        <h3 class="fs-heading">More goodnight kisses.<br><em>Less bathroom negotiations.</em></h3>
         <div class="tl-wrap" id="tlWrap">
           <div class="tl-item">
             <div class="tl-label">Night One</div>
-            <div class="tl-text">New, buzzy, curious. Done in 30 seconds. No fight.</div>
+            <div class="tl-text">New, buzzy, curious. Done in 30 seconds. No fuss.</div>
           </div>
           <div class="tl-item">
             <div class="tl-label">First Week</div>
-            <div class="tl-text">They just do it. No reminders needed.</div>
+            <div class="tl-text">No reminders. No coaxing. They just do it — and you're back to bedtime stories faster.</div>
           </div>
           <div class="tl-item">
             <div class="tl-label">First Month</div>
-            <div class="tl-text">Brushing is just bedtime now. Battle over.</div>
+            <div class="tl-text">Brushing is just part of the routine now. Bedtime is back to being your favorite part of the day.</div>
           </div>
         </div>
         <div class="fs-testimonial">
@@ -1849,8 +1930,8 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
     </div>
 <!-- Right: images -->
     <div class="fs-right">
-      <div class="fs-img fs-on" data-i="0" style="background:url(&#39;https://lh3.googleusercontent.com/d/1x8UDKNskUmD6t7rTJXA6W9_ux8iFLhte&#39;) center/cover no-repeat" aria-label="Sonic cleaning"></div>
-      <div class="fs-img" data-i="1" style="background:url(&#39;https://lh3.googleusercontent.com/d/1OtjYlz4Pn403neJZOoPU7cEw5z5XVUCz&#39;) center/cover no-repeat" aria-label="Happy children"></div>
+      <div class="fs-img fs-on" data-i="0" style="background:url(&#39;https://lh3.googleusercontent.com/d/1OtjYlz4Pn403neJZOoPU7cEw5z5XVUCz&#39;) center/cover no-repeat" aria-label="Happy children"></div>
+      <div class="fs-img" data-i="1" style="background:url(&#39;https://lh3.googleusercontent.com/d/1x8UDKNskUmD6t7rTJXA6W9_ux8iFLhte&#39;) center/cover no-repeat" aria-label="Sonic cleaning"></div>
       <div class="fs-img" data-i="2" style="background:url(&#39;https://images.loox.io/uploads/2025/7/18/ygh_h0wCLz.jpg&#39;) center/cover no-repeat" aria-label="Dental results"></div>
       <div class="fs-img" data-i="3" style="background:url(&#39;https://lh3.googleusercontent.com/d/12WYo-RauiHyx8QY6vmVvzKrO2vtK04vN&#39;) center/cover no-repeat" aria-label="Complete kit"></div>
     </div>
@@ -2218,6 +2299,36 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
         <div class="rb-warranty-years" style="font-size:36px;font-weight:700;line-height:1.2;color:#0344A4;margin-bottom:6px">The Sonic Brush<sup>®</sup> Promise</div>
         <div class="rb-warranty-tag" style="font-size:17px;font-weight:400;color:#1d1d1f;font-style:italic;margin-bottom:20px">No fine print. No runaround.</div>
         <p class="rb-warranty-body" style="font-size:17px;color:#86868b;line-height:1.75;max-width:700px">Every Sonic Brush Kids is backed by our manufacturer's warranty covering defects in materials and workmanship. If something isn't right, we make it right - replacement, not runaround. Our support team is reachable by phone at +1 (985) 257-7280, by email at contact@sonic-brush.net, or through our contact form. Free shipping on every order. Hassle-free returns. We stand behind what goes into your child's mouth every day.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rb-trust-bar">
+    <div class="rb-trust-inner">
+      <!-- Trustpilot — replicated from topfold -->
+      <div class="rb-trust-item">
+        <span style="display:inline-flex;align-items:center;gap:10px"><span style="display:inline-flex;gap:2px;flex-shrink:0"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s tp-half">★</span></span><span style="font-size:14px;font-weight:600;color:#1d1d1f;white-space:nowrap">Trusted By Parents</span><span style="display:inline-flex;align-items:center;gap:4px;flex-shrink:0"><svg aria-hidden="true" viewBox="0 0 16 16" style="fill:#00b67a;flex-shrink:0" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.88 6.225H16l-4.929 3.504-3.047 2.149-4.953 3.504L4.952 9.73 0 6.225h6.119L8 .572l1.881 5.653Zm1.596 4.812L8 11.9l4.929 3.527-1.453-4.392Z"></path></svg><span style="font-size:13px;font-weight:700;color:#00b67a;white-space:nowrap">Trustpilot</span></span></span>
+      </div>
+      <div class="rb-trust-divider"></div>
+      <!-- Secure Checkout -->
+      <div class="rb-trust-item">
+        <div class="rb-secure-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <div>
+          <div class="rb-secure-label">Secure Checkout</div>
+          <div class="rb-secure-sub">256-bit SSL encryption</div>
+        </div>
+      </div>
+      <div class="rb-trust-divider"></div>
+      <!-- Media logos — replicated from asi-section -->
+      <div class="rb-media-wrap">
+        <div class="rb-media-label">As seen in</div>
+        <div class="rb-media-logos">
+          <img src="https://sonic-brush.net/cdn/shop/files/Design_sans_titre_93.png?v=1711022455" alt="Press logo" onerror="this.style.display='none'">
+          <img src="https://sonic-brush.net/cdn/shop/files/3_c10d3b0b-cefb-4928-aca5-f05982d36650.png?v=1695115115" alt="Press logo" onerror="this.style.display='none'">
+          <img src="https://sonic-brush.net/cdn/shop/files/Design_sans_titre_11.png?v=1695114955" alt="Press logo" onerror="this.style.display='none'">
+          <img src="https://sonic-brush.net/cdn/shop/files/Design_sans_titre_13.png?v=1695115794" alt="Press logo" onerror="this.style.display='none'">
+          <img src="https://sonic-brush.net/cdn/shop/files/1_0f59b7e4-5803-479e-b8d3-1c76a4ad9c81.png?v=1720352384" alt="Press logo" onerror="this.style.display='none'">
+        </div>
       </div>
     </div>
   </div>
@@ -2792,7 +2903,7 @@ document.addEventListener('DOMContentLoaded', function() {
 /* ── Comparison card carousel (swipe left = advance, next peeks right) ── */
 (function(){
   var CMP_N = 10;
-  var cmpCur = 0, cmpTimer = null, cmpT = 0, _cd = false, _sx = 0;
+  var cmpCur = 0, cmpT = 0, _cd = false, _sx = 0;
 
   function cmpDims(){
     var o = document.getElementById('cmpCarOuter'); if(!o) return null;
@@ -2818,8 +2929,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var prevBtn = document.getElementById('cmpPrev'), nextBtn = document.getElementById('cmpNext');
     if(prevBtn) prevBtn.disabled = T >= d.peekOff;
     if(nextBtn) nextBtn.disabled = T <= minT;
-    clearTimeout(cmpTimer);
-    if(T > minT) cmpTimer = setTimeout(function(){ cmpGoCard(cmpCur+1); }, 4800);
   }
 
   /* Jump to a specific card index (used by dots and auto-advance) */
