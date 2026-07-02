@@ -613,6 +613,14 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .fs-text:nth-child(even) .fs-img-wrap{order:0}
 .fs-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:10px;order:1}
 .fs-thumb{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
+.fs-text[data-i="1"]{flex-direction:column;align-items:stretch}
+.fs-text[data-i="1"] .fs-text-body{flex:none;width:100%;text-align:center}
+.fs-text[data-i="1"] .fs-heading{text-align:center}
+.fs-text[data-i="1"] .fs-testimonial{text-align:left;width:50%;margin:0 auto}
+.iac-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
+.iac-card{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5}
+.iac-img{width:100%;height:100%;object-fit:cover;display:block}
+.iac-caption{position:absolute;bottom:0;left:0;right:0;padding:20px 16px 22px;background:linear-gradient(to bottom,transparent,rgba(0,0,0,0.72));color:#fff;font-size:15px;font-weight:600;line-height:1.4;text-align:left}
 .fs-eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#1e3a8a;margin-bottom:18px;background:#dbeafe;border-radius:999px;padding:4px 12px}
 .fs-heading{font-size:52px;font-weight:600;line-height:1.1;letter-spacing:-.03em;color:#1d1d1f;margin-bottom:22px}
 .fs-body{font-size:20px;line-height:1.65;color:#1d1d1f;margin-bottom:20px}
@@ -648,6 +656,10 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
   .fs-img-wrap .fs-mob-img{width:100%;margin-left:0;margin-right:0;border-radius:0}
   .fs-thumbs{padding:0 20px}
   .fs-thumb{border-radius:10px}
+  .iac-grid{grid-template-columns:repeat(3,72vw);overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;gap:12px;padding-bottom:6px;margin-left:-20px;margin-right:-20px;padding-left:20px}
+  .iac-card{scroll-snap-align:start;border-radius:14px}
+  .iac-caption{font-size:14px}
+  .fs-text[data-i="1"] .fs-testimonial{width:100%;margin:0}
   .fs-heading{font-size:32px}
 }
 /* Spiel section headline */
@@ -1719,21 +1731,28 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
         </div>
       </div>
       <div class="fs-text" data-i="1">
-        <div class="fs-mob-img" style="background:url(&#39;https://lh3.googleusercontent.com/d/1OtjYlz4Pn403neJZOoPU7cEw5z5XVUCz&#39;) center/cover no-repeat" aria-label="Happy children"></div>
         <div class="fs-text-body">
-        <span class="fs-eyebrow">See it in action</span>
-        <h3 class="fs-heading">They bite down. They press the button.<br><em>You move on with your evening.</em></h3>
-        <p class="fs-body">The mouthpiece holds bristles at a <span class="spiel-hl">45° angle.</span> Sonic vibration does the rest. <span class="spiel-hl">Every surface, every tooth, every time.</span></p>
-        <ul class="fs-bullets">
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>BASS brushing technique delivered automatically, every single time</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>360° simultaneous cleaning — no surface left untouched</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>30 seconds replaces 2–3 minutes of inconsistent manual effort</li>
-        </ul>
-        <div class="fs-testimonial">
-          <p class="fs-tq">"My son was done before I finished flossing my own teeth. I stood there in disbelief."</p>
-          <div class="fs-ta-row"><img class="fs-avatar" src="https://i.pravatar.cc/64?img=7" alt="Mark T."><span class="fs-ta">Mark T., father of two</span></div>
-          <div class="fs-stars" style="margin-top:12px"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
-        </div>
+          <span class="fs-eyebrow">See it in action</span>
+          <h3 class="fs-heading">They bite down. They press the button.<br><em>You move on with your evening.</em></h3>
+          <div class="iac-grid">
+            <div class="iac-card">
+              <img src="https://images.loox.io/uploads/2020/2/26/E1pg3qkVu.jpg" class="iac-img" alt="BASS brushing">
+              <div class="iac-caption">BASS brushing technique delivered automatically, every single time</div>
+            </div>
+            <div class="iac-card">
+              <img src="https://images.loox.io/uploads/2025/7/18/Twcw30imDB.jpg" class="iac-img" alt="360 cleaning">
+              <div class="iac-caption">360° simultaneous cleaning — no surface left untouched</div>
+            </div>
+            <div class="iac-card">
+              <img src="https://images.loox.io/uploads/2025/7/18/KP_l-f_nVT.jpg" class="iac-img" alt="30 seconds">
+              <div class="iac-caption">30 seconds replaces 2–3 minutes of inconsistent manual effort</div>
+            </div>
+          </div>
+          <div class="fs-testimonial">
+            <p class="fs-tq">"My son was done before I finished flossing my own teeth. I stood there in disbelief."</p>
+            <div class="fs-ta-row"><img class="fs-avatar" src="https://i.pravatar.cc/64?img=7" alt="Mark T."><span class="fs-ta">Mark T., father of two</span></div>
+            <div class="fs-stars" style="margin-top:12px"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
+          </div>
         </div>
       </div>
       <div class="fs-text" data-i="2">
