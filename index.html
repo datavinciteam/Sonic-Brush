@@ -614,6 +614,26 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .fs-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:10px;order:1}
 .fs-thumb{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
 .fs-text[data-i="1"]{flex-direction:column;align-items:stretch}
+.fs-text[data-i="3"]{display:block;padding:48px 0}
+.kit-card{background:#0344A4;border-radius:24px;overflow:hidden;display:flex;align-items:stretch;width:100%;box-shadow:0 8px 32px rgba(3,68,164,0.28)}
+.kit-card-img{flex:0 0 40%;display:flex;align-items:center;justify-content:center;padding:32px 24px}
+.kit-card-img img{width:100%;height:auto;display:block;border-radius:16px;border:5px solid rgba(147,197,253,0.65)}
+.kit-card-body{flex:1;padding:48px 44px;display:flex;flex-direction:column;justify-content:center}
+.kit-card-body .fs-eyebrow{background:rgba(255,255,255,0.18);color:#fff;align-self:flex-start}
+.kit-card-body .fs-heading{color:#fff}
+.kit-card-body .fs-heading em{color:rgba(255,255,255,0.7)}
+.kit-card-body .fs-bullets::before{background:rgba(255,255,255,0.2)}
+.kit-card-body .fs-bullets li{color:#fff;border-top-color:rgba(255,255,255,0.15)}
+.kit-card-body .fs-bullets li svg circle{fill:#fff}
+.kit-card-body .fs-bullets li svg path{stroke:#0344A4}
+.kit-card-body .fs-testimonial{background:rgba(255,255,255,0.1);margin-top:28px}
+.kit-card-body .fs-tq{color:#fff}
+.kit-card-body .fs-ta{color:rgba(255,255,255,0.65)}
+.kit-card-body .fs-cta-pkg{background:#fff;color:#0344A4;background-image:none;animation:none}
+.kit-card-body .fs-cta-pkg:hover{background:rgba(255,255,255,0.9)}
+.kit-card-body .fs-cta-badge{background:rgba(255,255,255,0.15);color:#fff}
+.kit-card-body .fs-cta-row{flex-wrap:wrap}
+@media(max-width:768px){.kit-card{flex-direction:column}.kit-card-img{flex:none;padding:24px 32px}.kit-card-body{padding:28px 24px}}
 .fs-text[data-i="1"] .fs-text-body{flex:none;width:100%;text-align:center}
 .fs-text[data-i="1"] .fs-heading{text-align:center}
 .fs-text[data-i="1"] .fs-testimonial{text-align:left;width:50%;margin:0 auto}
@@ -621,6 +641,16 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .iac-card{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5}
 .iac-img{width:100%;height:100%;object-fit:cover;display:block}
 .iac-caption{position:absolute;bottom:0;left:0;right:0;padding:20px 16px 22px;background:linear-gradient(to bottom,transparent,rgba(0,0,0,0.72));color:#fff;font-size:15px;font-weight:600;line-height:1.4;text-align:left}
+.tl-wrap{position:relative;margin:28px 0 8px;padding-left:36px}
+.tl-wrap::before{content:'';position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(to bottom,#0344A4,rgba(3,68,164,0.15))}
+.tl-item{position:relative;padding-bottom:32px;opacity:0;transform:translateY(18px);transition:opacity 0.45s ease,transform 0.45s ease}
+.tl-item:last-child{padding-bottom:0}
+.tl-item.tl-active{opacity:1;transform:translateY(0)}
+.tl-item::before{content:'';position:absolute;left:-32px;top:5px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid rgba(3,68,164,0.25);transition:border-color 0.45s ease,background 0.45s ease}
+.tl-item.tl-active::before{background:#0344A4;border-color:#0344A4;box-shadow:0 0 0 4px rgba(3,68,164,0.12)}
+.tl-label{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#0344A4;margin-bottom:4px;opacity:0;transition:opacity 0.45s ease 0.1s}
+.tl-item.tl-active .tl-label{opacity:1}
+.tl-text{font-size:16px;line-height:1.55;color:#1d1d1f;font-weight:500}
 .fs-eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#1e3a8a;margin-bottom:18px;background:#dbeafe;border-radius:999px;padding:4px 12px}
 .fs-heading{font-size:52px;font-weight:600;line-height:1.1;letter-spacing:-.03em;color:#1d1d1f;margin-bottom:22px}
 .fs-body{font-size:20px;line-height:1.65;color:#1d1d1f;margin-bottom:20px}
@@ -1761,11 +1791,20 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
         <span class="fs-eyebrow">What actually changes at home</span>
         <h3 class="fs-heading">The brushing fight doesn't end gradually.<br><em>It ends tonight.</em></h3>
         <p class="fs-body">Night One - It's new. It buzzes. They want to try it. <span class="spiel-hl">Thirty seconds later - done. No negotiation.</span> Night Two - They pick it up themselves. Maybe before you even ask. Night Three - It's just part of bedtime now. The argument is gone. <span class="spiel-hl">It's just... gone.</span></p>
-        <ul class="fs-bullets">
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>First week: brushing becomes a non-event in your household</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>First month: your child brushes independently without reminders</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>First dental visit: the hygienist notices the difference</li>
-        </ul>
+        <div class="tl-wrap" id="tlWrap">
+          <div class="tl-item">
+            <div class="tl-label">Night One</div>
+            <div class="tl-text">New, buzzy, curious. Done in 30 seconds. No fight.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-label">First Week</div>
+            <div class="tl-text">They just do it. No reminders needed.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-label">First Month</div>
+            <div class="tl-text">Brushing is just bedtime now. Battle over.</div>
+          </div>
+        </div>
         <div class="fs-testimonial">
           <p class="fs-tq">"Our dentist said 'whatever you changed, keep doing it.' Best $60 I've ever spent."</p>
           <div class="fs-ta-row"><img class="fs-avatar" src="https://i.pravatar.cc/64?img=47" alt="Jennifer K."><span class="fs-ta">Jennifer K., mom of three</span></div>
@@ -1774,25 +1813,30 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
         </div>
       </div>
       <div class="fs-text" data-i="3">
-        <div class="fs-mob-img" style="background:url(&#39;https://lh3.googleusercontent.com/d/12WYo-RauiHyx8QY6vmVvzKrO2vtK04vN&#39;) center/cover no-repeat" aria-label="Complete kit"></div>
-        <div class="fs-text-body">
-        <span class="fs-eyebrow">Everything included</span>
-        <h3 class="fs-heading">Unbox tonight.<br><em>First brush tonight.</em></h3>
-        <p class="fs-body">Sonic Brush Kids. Charging station. USB cable. User manual. <span class="spiel-hl">Four colors. Sized for their age.</span> Plug in, charge up, and go.</p>
-        <ul class="fs-bullets">
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Complete kit: brush, dock, cable, manual. Nothing else to buy</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Two jaw-matched sizes for ages 6–7 and 8–15</li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>4-hour battery = weeks of brushing between charges</li>
-        </ul>
-        <div class="fs-testimonial">
-          <div class="fs-cta-row">
-            <a href="#topfold" class="fs-cta-pkg"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Choose Package</a>
-            <span class="fs-cta-badge">40% Off Today</span>
+        <div class="kit-card">
+          <div class="kit-card-img">
+            <img src="https://cdn.shopify.com/s/files/1/0099/7539/8466/files/cxcxc_480x480.png?v=1573666984" alt="Sonic Brush Kids complete kit">
           </div>
-          <p class="fs-tq">"Bought the yellow one for my nephew's birthday. His mom texted me that night and said 'this is the best gift anyone has ever given us.'"</p>
-          <div class="fs-ta-row"><img class="fs-avatar" src="https://i.pravatar.cc/64?img=70" alt="David R."><span class="fs-ta">David R., uncle</span></div>
-          <div class="fs-stars" style="margin-top:12px"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
-        </div>
+          <div class="kit-card-body">
+            <span class="fs-eyebrow">Everything included</span>
+            <h3 class="fs-heading">Unbox tonight.<br><em>First brush tonight.</em></h3>
+            <p style="color:rgba(255,255,255,0.75);font-size:15px;line-height:1.6;margin:10px 0 18px">Every piece you need, nothing to hunt down separately. Plug in and go.</p>
+            <ul class="fs-bullets">
+              <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>1 x Sonic Brush<sup>®</sup> Kids</li>
+              <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>1 x Charging station</li>
+              <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>1 x USB charging cable</li>
+              <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="10" cy="10" r="10" fill="#0344A4"></circle><path d="M6 10l2.5 2.5 5.5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>1 x User manual</li>
+            </ul>
+            <div class="fs-testimonial">
+              <div class="fs-cta-row">
+                <a href="#topfold" class="fs-cta-pkg"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Choose Package</a>
+                <span class="fs-cta-badge">40% Off Today</span>
+              </div>
+              <p class="fs-tq">"Bought the yellow one for my nephew's birthday. His mom texted me that night and said 'this is the best gift anyone has ever given us.'"</p>
+              <div class="fs-ta-row"><img class="fs-avatar" src="https://i.pravatar.cc/64?img=70" alt="David R."><span class="fs-ta">David R., uncle</span></div>
+              <div class="fs-stars" style="margin-top:12px"><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span><span class="tp-s">★</span></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -2493,6 +2537,23 @@ function pickColor(btn) {
     tilt.style.transform  = 'rotateY(-10deg) rotateX(5deg) scale(1)';
   }, 120);
 }
+
+/* ── Timeline scroll animation ───────────────────────── */
+(function(){
+  const items = document.querySelectorAll('.tl-item');
+  if(!items.length) return;
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if(e.isIntersecting){
+        const idx = Array.from(items).indexOf(e.target);
+        setTimeout(() => e.target.classList.add('tl-active'), idx * 120);
+      } else {
+        e.target.classList.remove('tl-active');
+      }
+    });
+  }, { threshold: 0.25 });
+  items.forEach(el => obs.observe(el));
+})();
 
 /* ── Scroll Reveal ────────────────────────────────────── */
 const revealObs = new IntersectionObserver((entries) => {
