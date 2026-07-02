@@ -607,6 +607,12 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
 .fs-mob-img{flex:0 0 52%;height:560px;border-radius:20px;background-size:cover;background-position:center}
 .fs-text:nth-child(odd) .fs-mob-img{order:2}
 .fs-text:nth-child(even) .fs-mob-img{order:0}
+.fs-img-wrap{flex:0 0 52%;display:flex;flex-direction:column;gap:10px}
+.fs-img-wrap .fs-mob-img{flex:none;width:100%;order:0!important}
+.fs-text:nth-child(odd) .fs-img-wrap{order:2}
+.fs-text:nth-child(even) .fs-img-wrap{order:0}
+.fs-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:10px;order:1}
+.fs-thumb{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
 .fs-eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#1e3a8a;margin-bottom:18px;background:#dbeafe;border-radius:999px;padding:4px 12px}
 .fs-heading{font-size:52px;font-weight:600;line-height:1.1;letter-spacing:-.03em;color:#1d1d1f;margin-bottom:22px}
 .fs-body{font-size:20px;line-height:1.65;color:#1d1d1f;margin-bottom:20px}
@@ -638,6 +644,10 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
   .fs-mob-img{flex:none;width:calc(100% + 40px);margin-left:-20px;margin-right:-20px;aspect-ratio:1/1;height:auto;border-radius:0}
   .fs-mob-img{order:0!important}
   .fs-text-body{order:1}
+  .fs-img-wrap{flex:none;width:calc(100% + 40px);margin-left:-20px;margin-right:-20px;gap:8px;order:0!important}
+  .fs-img-wrap .fs-mob-img{width:100%;margin-left:0;margin-right:0;border-radius:0}
+  .fs-thumbs{padding:0 20px}
+  .fs-thumb{border-radius:10px}
   .fs-heading{font-size:32px}
 }
 /* Spiel section headline */
@@ -1663,7 +1673,13 @@ footer{background:var(--bg-light);padding:40px 24px;border-top:1px solid rgba(0,
     <!-- Left: text panels (all same position, transition on scroll) -->
     <div class="fs-left">
       <div class="fs-text fs-on" data-i="0">
-        <div class="fs-mob-img" style="background:url(&#39;https://lh3.googleusercontent.com/d/1x8UDKNskUmD6t7rTJXA6W9_ux8iFLhte&#39;) center/cover no-repeat" aria-label="Sonic cleaning"></div>
+        <div class="fs-img-wrap">
+          <div class="fs-mob-img" style="background:url(&#39;https://lh3.googleusercontent.com/d/1x8UDKNskUmD6t7rTJXA6W9_ux8iFLhte&#39;) center/cover no-repeat" aria-label="Sonic cleaning"></div>
+          <div class="fs-thumbs">
+            <img src="https://images.loox.io/uploads/2021/8/29/EJrebwEZi.jpg" class="fs-thumb" alt="">
+            <img src="https://images.loox.io/uploads/2025/6/13/dbrj5LcJP.jpg" class="fs-thumb" alt="">
+          </div>
+        </div>
         <div class="fs-text-body">
         <span class="fs-eyebrow">What it feels like</span>
         <h3 class="fs-heading">Soft enough for the most sensitive mouth<br><em>in your house.</em></h3>
